@@ -1,0 +1,4 @@
+.idea
+.sass-cache
+compass_app*
+*.rb
