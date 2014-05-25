@@ -1,7 +1,7 @@
 // Global Foundation Settings
 
-//@import "normalize";
-//@import "settings";
+@import "normalize";
+@import "settings";
 //@import "foundation";
 //@import "foundation/components/tables";
 //@import "foundation/components/global"; // *always required
@@ -13,9 +13,6 @@
 // Imports
 @import "webfonts.css" screen;
 @import "foundation-icons.css" screen;
-
-// SASS Customizing
-
 
 // Variables
 $ci1: #76bd1d;
@@ -29,6 +26,7 @@ $ci6: #009639;
 .arial,
 .arial b,
 .arial strong {font-family: Arial, Verdana, sans-serif !important;}
+.dosisregular {font-family: 'dosisregular', Arial, sans-serif;}
 .dosislight {font-family: 'dosislight', Arial, sans-serif;}
 .dosismedium {font-family: 'dosismedium', Arial, sans-serif;}
 .dosisbold {font-family: 'dosisbold', Arial, sans-serif;}
@@ -38,7 +36,6 @@ $ci6: #009639;
 
 // Essentials
 body {
-  font-size: 14px;
   counter-reset: section;
   @extend .dosislight;
 
@@ -47,10 +44,40 @@ body {
 	@extend .dosisbold;
   }
   p {
-	font-size: 0.9rem;
+	font-size: 1rem;
   }
 }
 
+// SASS Customizing
+.button {
+  color:#fff !important;
+  @extend .dosissemibold;
+}
+.button.tiny {
+  font-size: 0.9rem;
+  padding-top: 0.225rem;
+  padding-right: 1.2rem;
+  padding-bottom: 0.2875rem;
+  padding-left: 1.2rem;
+}
+.button.small {
+  padding-top: 0.575rem;
+  padding-right: 1.9rem;
+  padding-bottom: 0.4375rem;
+  padding-left: 1.9rem;
+  font-size: 0.8125rem;
+}
+.button.mega {
+  padding-top: 1rem;
+  padding-right: 2.25rem;
+  padding-bottom: 1.1875rem;
+  padding-left: 2.25rem;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  @extend .dosisregular;
+}
+
+.text-uppercase {text-transform: uppercase;}
 
 // Headlines
 h1, h2, h3, h4, h5 {
@@ -78,7 +105,6 @@ h3 {
 }
 
 // Coloring
-.green {color: $ci1;}
 .gradient-lightgrey {
   background: rgba(233,233,233,1);/* Old Browsers */
   background: -moz-linear-gradient(top, rgba(233,233,233,1) 0%, rgba(244,244,244,1) 4%, rgba(253,253,253,1) 97%, rgba(233,233,233,1) 100%); /* FF3.6+ */
@@ -88,6 +114,16 @@ h3 {
   background: -ms-linear-gradient(top, rgba(233,233,233,1) 0%, rgba(244,244,244,1) 4%, rgba(253,253,253,1) 97%, rgba(233,233,233,1) 100%); /* IE 10+ */
   background: linear-gradient(to bottom, rgba(233,233,233,1) 0%, rgba(244,244,244,1) 4%, rgba(253,253,253,1) 97%, rgba(233,233,233,1) 100%);/* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#e9e9e9', GradientType=0 );/* IE6-9 */
+}
+.gradient-lightgrey-reverse {
+  background: rgba(253,253,253,1);
+  background: -moz-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(253,253,253,1)), color-stop(100%, rgba(239,239,239,1)));
+  background: -webkit-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
+  background: -o-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
+  background: -ms-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
+  background: linear-gradient(to bottom, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#efefef', GradientType=0 );
 }
 .gradient-yellow {
   background: rgba(249,226,77,1);
@@ -109,6 +145,38 @@ h3 {
   border-bottom: none;
 }
 
+.txtgreen {color: $ci1;}
+.txtdarkgreen {color: $ci6;}
+.txtlightgrey {color:$ci3;}
+
+.green {background: $ci1;}
+.darkgreen {background: $ci6;}
+.lightgrey {background:$ci3;}
+.yellow {background: #F8D928;}
+
+.button.green {background: $ci1;}
+.button.darkgreen {background: $ci6;}
+.button.lightgrey {background:$ci3;}
+.button.yellow {
+	@extend .gradient-yellow;
+	border-top: 1px solid  #fcef88;
+	border-bottom: 1px solid #dcc647;
+  }
+.button.green:hover, .button.green:focus {
+  background: mix($ci1, #000, 80%);
+}
+.button.darkgreen:hover, .button.darkgreen:focus {
+  background: mix($ci6, #000, 80%);
+}
+.button.lightgrey:hover,.button.lightgrey:focus {
+	background: mix($ci3, #000, 80%);
+}
+.button.yellow:hover, .button.yellow:focus {
+  background: mix(#F8D928, #fff, 70%);
+}
+
+
+/* Rounded Stuff */
 .roundFull {
   border-radius: 200px 200px 200px 200px;
   -moz-border-radius: 200px 200px 200px 200px;
@@ -157,21 +225,27 @@ h3 {
 
 /* Navigation ROW */
 .navigationRow {
+  padding: 10px 0 0;
   border-bottom: 2px solid #76bd1d;
   @extend .dosissemibold;
+  @extend .gradient-lightgrey-reverse;
 
-  background: rgba(253,253,253,1);
-  background: -moz-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(253,253,253,1)), color-stop(100%, rgba(239,239,239,1)));
-  background: -webkit-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
-  background: -o-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
-  background: -ms-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
-  background: linear-gradient(to bottom, rgba(253,253,253,1) 0%, rgba(239,239,239,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#efefef', GradientType=0 );
-
-	ul.mainNavigation {
-	  text-transform: uppercase;
+  ul.mainNavigation {
+	margin:0 15px 0 0;
+	text-transform: uppercase;
+	li.first {
+	  margin-left:0;
 	}
+	li {
+	  line-height: 3;
+	  a {
+		color: $ci5;
+	  }
+	}
+  }
+  .button {
+	margin: 10px 0 0 0;
+  }
 }
 
 /* HERO ROW */
@@ -277,14 +351,15 @@ h3 {
 
 	p {
 	  color:$ci3;
-	  font-size: 20px;
+	  font-size: 1.2rem;
 	  padding: 10px 10% 30px;
 	  @extend .dosissemibold;
 	}
 
 	a {
-	  font-size: 18px;
+	  font-size: 1.1rem;
 	  text-transform: uppercase;
+	  color: $ci6;
 	}
   }
 
@@ -432,7 +507,9 @@ h3 {
 /* FAQ Row */
 .faqRow {
   margin-bottom: 100px;
-
+  h3{
+	margin: 0 0 30px 0;
+  }
   .accordion dd > a {
 	background: transparent;
 	padding:1rem;
@@ -541,7 +618,7 @@ h3 {
 	  @extend .arial;
 	  display: block;
 	  font-size: 14px;
-	  color: #757982;
+	  color: $ci5;
 	}
 	a {
 	  @extend .arial;
