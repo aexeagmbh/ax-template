@@ -1,7 +1,31 @@
 @import "webfonts.css" screen;
 @import "foundation-icons.css" screen;
-.arial, .priceRow table tr td, .solutionRow p {
-  font-family: Arial, Verdana, sans-serif;
+.arial, .priceRow table tr td, .solutionRow p, .faqRow .accordion .content.active, .footerRow .careers b,
+.footerRow .news b,
+.footerRow .blog b, .footerRow .careers a,
+.footerRow .news a,
+.footerRow .blog a,
+.arial b,
+.priceRow table tr td b,
+.solutionRow p b,
+.faqRow .accordion .content.active b,
+.footerRow .careers b b,
+.footerRow .news b b,
+.footerRow .blog b b,
+.footerRow .careers a b,
+.footerRow .news a b,
+.footerRow .blog a b,
+.arial strong,
+.priceRow table tr td strong,
+.solutionRow p strong,
+.faqRow .accordion .content.active strong,
+.footerRow .careers b strong,
+.footerRow .news b strong,
+.footerRow .blog b strong,
+.footerRow .careers a strong,
+.footerRow .news a strong,
+.footerRow .blog a strong {
+  font-family: Arial, Verdana, sans-serif !important;
 }
 
 .dosislight, body {
@@ -17,7 +41,7 @@ body strong {
   font-family: 'dosisbold', Arial, sans-serif;
 }
 
-.dosissemibold, h1, h2, h3, h4, .navigationRow, .productRow .greyBG p, .priceRow table th, .priceRow table tr td span.price, .solutionRow a {
+.dosissemibold, h1, h2, h3, h4, h5, .navigationRow, .productRow .greyBG p, .priceRow table th, .priceRow table tr td span.price, .solutionRow a, .faqRow .accordion dd > a {
   font-family: 'dosissemibold', Arial, Sans-serif;
 }
 
@@ -29,15 +53,11 @@ body {
   font-size: 14px;
   counter-reset: section;
 }
-body b,
-body strong {
-  font-size: 14px;
-}
 body p {
   font-size: 0.9rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   color: #313337;
   text-transform: uppercase;
 }
@@ -99,7 +119,13 @@ h3 {
   border-bottom: 2px solid #76bd1d;
 }
 
-.roundFull, .howworkRow ol li:before, .companyRow .companyImg {
+.greenborder.vertical {
+  border-right: 2px solid #76bd1d;
+  border-bottom: none;
+}
+
+.roundFull, .howworkRow ol li:before, .companyRow .companyImg, .testimonialRow a.orbit-next,
+.testimonialRow a.orbit-prev {
   border-radius: 200px 200px 200px 200px;
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
@@ -434,11 +460,128 @@ h3 {
 .faqRow {
   margin-bottom: 100px;
 }
+.faqRow .accordion dd > a {
+  background: transparent;
+  padding: 1rem;
+  margin-left: 72px;
+  font-size: 24px;
+  color: #313337;
+}
+.faqRow .accordion .content.active {
+  background: none;
+  margin-left: 100px;
+  font-size: 15px;
+  color: #313337;
+}
+.faqRow dd {
+  min-height: 72px;
+}
+.faqRow dd:nth-child(even) {
+  background: white url(../img/acc_light_plus.jpg) top left no-repeat;
+}
+.faqRow dd:nth-child(odd) {
+  background: #f2f2f2 url(../img/acc_dark_plus.jpg) top left no-repeat;
+}
+.faqRow dd:nth-child(even).active {
+  background: white url(../img/acc_grey_minus.jpg) top left no-repeat;
+}
+.faqRow dd:nth-child(odd).active {
+  background: #f2f2f2 url(../img/acc_grey_minus.jpg) top left no-repeat;
+}
 
-/* Saying Row */
-.sayingRow {
-  padding: 50px 0;
+/* Testimonial Row */
+.testimonialRow {
   min-height: 612px;
   margin-bottom: 100px;
-  background: url(../img/gray-band.jpg) top center no-repeat;
+  padding: 50px 0;
+  background: #e8e8e8 url(../img/gray-band.jpg) top center no-repeat;
+  background-size: cover;
+}
+.testimonialRow blockquote,
+.testimonialRow p {
+  font-size: 30px;
+  line-height: 1.4;
+  border: none;
+}
+.testimonialRow blockquote cite,
+.testimonialRow p cite {
+  margin-top: 1em;
+  color: #7f8b94;
+  font-size: 30px;
+  font-style: normal;
+}
+.testimonialRow .large {
+  font-size: 48px;
+}
+.testimonialRow .large cite {
+  margin-top: 1rem;
+  color: #7f8b94;
+  font-size: 30px;
+  font-style: normal;
+}
+.testimonialRow span.greenborder {
+  display: inline-block;
+  margin: 20px auto;
+  width: 50%;
+}
+.testimonialRow ul.orbit-content {
+  margin: 30px 0 0 0;
+}
+.testimonialRow a.orbit-next,
+.testimonialRow a.orbit-prev {
+  height: 50px;
+  width: 50px;
+  background: #76bd1d;
+}
+.testimonialRow a.orbit-prev span {
+  left: 8px;
+}
+.testimonialRow ol.orbit-bullets li.active {
+  background: #76bd1d;
+}
+
+/* Footer Row */
+.footerRow {
+  margin-bottom: 100px;
+}
+.footerRow h4 {
+  color: #009639;
+  margin-bottom: 30px;
+}
+.footerRow .careers .entry,
+.footerRow .news .entry,
+.footerRow .blog .entry {
+  font-size: 16px;
+}
+.footerRow .careers b,
+.footerRow .news b,
+.footerRow .blog b {
+  display: block;
+  font-size: 14px;
+  color: #757982;
+}
+.footerRow .careers a,
+.footerRow .news a,
+.footerRow .blog a {
+  font-style: italic;
+  display: block;
+  color: #76bd1d;
+}
+.footerRow .careers .shadowbox {
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.footerRow .careers .shadowbox h5 {
+  padding: 10px;
+  background: #009639;
+  color: #fff;
+}
+.footerRow .careers .shadowbox .entry {
+  width: 100%;
+  padding: 10px 3%;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
 }

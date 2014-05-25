@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -447,54 +447,199 @@
 	<div class="container faqRow">
 		<div class="row">
 			<div class="small-12 text-center columns"><h3>Frequently asked questions</h3></div>
-			<div class="small-12 columns">ACCORDEON</div>
+			<div class="small-12 columns">
+
+				<dl class="accordion" data-accordion>
+					<dd>
+						<a href="#panel1">1.What are the benefits to using your software?</a>
+						<div id="panel1" class="content">
+							Fourth panel content goes here...
+						</div>
+					</dd>
+					<dd>
+						<a href="#panel2">2.What about duplicate content?</a>
+						<div id="panel2" class="content">
+							Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</dd>
+					<dd>
+						<a href="#panel3">3.What SEO-benefits are there for my website?</a>
+						<div id="panel3" class="content">
+							Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</dd>
+					<dd class="active">
+						<a href="#panel4">4.Doyou produce texts out of "thin air"?</a>
+						<div id="panel4" class="content active">
+							Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</dd>
+					<dd>
+						<a href="#panel5">5.How much money can I save with Aexea?</a>
+						<div id="panel5" class="content">
+							Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</dd>
+					<dd>
+						<a href="#panel6">Accordion 3</a>
+						<div id="panel6" class="content">
+							Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</dd>
+				</dl>
+
+			</div>
 		</div>
 	</div>
 
-	<!-- SayingRow -->
-	<div class="container sayingRow">
+	<!-- testimonialRow -->
+	<div class="container testimonialRow">
 		<div class="row">
 			<div class="small-12 small-text-center columns"><h3>What others are saying</h3></div>
 			<div class="row">
 				<div class="small-10 small-centered columns">
-					<ul class="example-orbit-content" data-orbit data-options="animation_speed:1500;">
-						<li data-orbit-slide="headline-1">
-							<div>
-								<h2>Headline 1</h2>
-								<h3>Subheadline</h3>
+					<ul class="orbit-content" data-orbit data-options="animation_speed:1500;">
+
+						<!-- Slide 1 -->
+						<li data-orbit-slide="headline-1" class="text-center">
+							<div class="small-12 large-5 large-offset-1 columns greenborder vertical">
+								<blockquote>
+									“We received <b>100k texts –</b>
+									within 1 hour. Lorem ipsum dolor sit amet, consetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam”
+									<cite>Joe Smith, CEO, ABC</cite>
+								</blockquote>
+							</div>
+							<div class="small-12 large-5 large-pull-1 columns">
+								<blockquote>
+									“Foreign languages are<br />
+									<b>no longer a bottleneck.</b>”
+									<cite>Joe Smith, CEO, ABC</cite>
+								</blockquote>
+								<span class="greenborder"></span>
+								<blockquote class="large">
+									“This is a <b>game<br/> changer.</b>”
+									<cite>Joe Smith, CEO, ABC</cite>
+								</blockquote>
 							</div>
 						</li>
-						<li data-orbit-slide="headline-2">
-							<div>
-								<h2>Headline 2</h2>
-								<h3>Subheadline</h3>
+
+						<!-- Slide 2 -->
+						<li data-orbit-slide="headline-2" class="text-center">
+							<div class="small-10 small-offset-1 columns">
+								<h3 class="green">Hallo Welt</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
 							</div>
 						</li>
-						<li data-orbit-slide="headline-3">
-							<div>
-								<h2>Headline 3</h2>
-								<h3>Subheadline</h3>
-							</div>
-						</li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- Footer Row -->
+	<div class="container footerRow">
+		<div class="row">
+			<div class="small-12 small-text-center columns"><h4 class="green">Business save more with AX</h4></div>
+			<div class="small-12 large-3 columns contact">
+				<h5><img src="../img/logo.png" /> Contact us today</h5>
+				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.</p>
+				<form>
+					<div class="row">
+						<div class="large-12 columns">
+							<label>
+								<input type="text" placeholder="Name" />
+							</label>
+						</div>
+						<div class="large-12 columns">
+							<label>
+								<input type="text" placeholder="Email" />
+							</label>
+						</div>
+						<div class="large-12 columns">
+							<label>
+								<textarea placeholder="Name" /></textarea>
+							</label>
+						</div>
+						<div class="large-12 columns">
+							<label></label>
+							<input type="radio" name="newsletter" value="Sign up For Newsletter" id="signup"><label for="signup">Sign up For Newsletter</label>
+						</div>
+						<div class="large-12 columns">
+							<input type="button" name="submit" class="button tiny" value="submit" />
+						</div>
 
-	<div class="row">
-		<div class="small-12 small-text-center columns"><h4 class="green">Business save more with AX</h4></div>
-		<div class="small-12 medium-3 large-3 columns">shortcontact</div>
-		<div class="small-12 medium-3 large-3 columns">news and press</div>
-		<div class="small-12 medium-3 large-3 columns">Careers</div>
-		<div class="small-12 medium-3 large-3 columns">jenni from the blog</div>
+					</div>
+				</form>
+			</div>
+			<div class="small-12 large-3 columns news">
+				<h5>news and press</h5>
+				<div class="entry">
+					<p><b>News Event Headline</b>
+						Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+						<a href="/">Read More ></a>
+					</p>
+				</div>
+				<div class="entry">
+					<p><b>News Event Headline</b>
+						Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+						<a href="/">Read More ></a>
+					</p>
+				</div>
+				<div class="entry">
+					<p><b>News Event Headline</b>
+						Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+						<a href="/">Read More ></a>
+					</p>
+				</div>
+			</div>
+			<div class="small-12 large-3 columns careers">
+				<div class="shadowbox">
+					<h5>Careers</h5>
+					<div class="entry">
+						<p><b>News Event Headline</b>
+							Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+							<a href="/">Read More ></a>
+						</p>
+					</div>
+					<div class="entry">
+						<p><b>News Event Headline</b>
+							Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+							<a href="/">Read More ></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="small-12 large-3 columns blog">
+				<h5>from the blog</h5>
+				<div class="entry">
+					<p><b>News Event Headline</b>
+						Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+						<a href="/">Read More ></a>
+					</p>
+				</div>
+				<div class="entry">
+					<p><b>News Event Headline</b>
+						Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+						<a href="/">Read More ></a>
+					</p>
+				</div>
+				<div class="entry">
+					<p><b>News Event Headline</b>
+						Nam liber tempor cum soluta nobis eleifend option congue nihil placerat facer possim assum.
+						<a href="/">Read More ></a>
+					</p>
+				</div>
+
+			</div>
+		</div>
 	</div>
 
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
 	<script src="js/foundation/foundation.tooltip.js"></script>
+	<script src="js/foundation/foundation.accordion.js"></script>
     <script>
       $(document).foundation();
     </script>
