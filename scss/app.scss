@@ -1,13 +1,46 @@
-// Global Foundation Settings
-
-@import "normalize";
 @import "settings";
-//@import "foundation";
-//@import "foundation/components/tables";
-//@import "foundation/components/global"; // *always required
+@import "foundation";
 
-// Classes Includes
-//$include-html-table-classes: $include-html-classes !default;
+
+// Or selectively include components
+//@import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+
 
 
 // Imports
@@ -88,16 +121,16 @@ h1, h2, h3, h4, h5 {
 
 h2 {
   font-size: 70px;
-	.large {
-  		font-size: 87px;
-	}
-	span.subheader {
-	  display: block;
-	  color: $ci2;
-	  font-size: 43px;
-	  line-height: 1;
-	  text-transform: none;
-	}
+  .large {
+	font-size: 87px;
+  }
+  span.subheader {
+	display: block;
+	color: $ci2;
+	font-size: 43px;
+	line-height: 1;
+	text-transform: none;
+  }
 }
 
 h3 {
@@ -158,10 +191,10 @@ h3 {
 .button.darkgreen {background: $ci6;}
 .button.lightgrey {background:$ci3;}
 .button.yellow {
-	@extend .gradient-yellow;
-	border-top: 1px solid  #fcef88;
-	border-bottom: 1px solid #dcc647;
-  }
+  @extend .gradient-yellow;
+  border-top: 1px solid  #fcef88;
+  border-bottom: 1px solid #dcc647;
+}
 .button.green:hover, .button.green:focus {
   background: mix($ci1, #000, 80%);
 }
@@ -169,7 +202,7 @@ h3 {
   background: mix($ci6, #000, 80%);
 }
 .button.lightgrey:hover,.button.lightgrey:focus {
-	background: mix($ci3, #000, 80%);
+  background: mix($ci3, #000, 80%);
 }
 .button.yellow:hover, .button.yellow:focus {
   background: mix(#F8D928, #fff, 70%);
@@ -253,15 +286,15 @@ h3 {
   min-height: 544px;
   background: url(../img/hero.jpg) top center no-repeat;
   @extend .specialelite;
-	h2 {
-	  margin: 80px 0 60px;
-	  font-size: 46px;
-	  @extend .specialelite;
-	}
-  	a {
+  h2 {
+	margin: 80px 0 60px;
+	font-size: 46px;
+	@extend .specialelite;
+  }
+  a {
 	color:$ci1;
 	font-size: 36px;
-  	}
+  }
 }
 
 /* Reason Row */
@@ -394,17 +427,17 @@ h3 {
 
 /* Pricing Table Row */
 .priceRow {
-	h4 {
-	  padding: 10px 0;
-	  margin-bottom: 0;
-	  background: #b3db69;
-	  color:#fff;
-	  border-radius: 5px 5px 0px 0px;
-	  -moz-border-radius: 5px 5px 0px 0px;
-	  -webkit-border-radius: 5px 5px 0px 0px;
-	  border: 0px solid #000000;
-	  border-bottom: 2px solid $ci1;
-	}
+  h4 {
+	padding: 10px 0;
+	margin-bottom: 0;
+	background: #b3db69;
+	color:#fff;
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border: 0px solid #000000;
+	border-bottom: 2px solid $ci1;
+  }
   table {
 	border-collapse: collapse;
 	border: none;
