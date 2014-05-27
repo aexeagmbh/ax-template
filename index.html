@@ -14,22 +14,39 @@
 <!-- Navigation Row -->
 <div class="container navigationRow">
 	<div class="row">
-		<div class="small-12 medium-2 large-2 columns">
-			<a href="/">
-				<img src="../img/logo.png" alt="Logo">
-			</a>
+		<div class="small-12 columns">
+			<div class="contain-to-grid sticky">
+				<nav class="top-bar" data-topbar data-options="sticky_on: large">
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="#"><img src="../img/logo.png" alt="Logo"></a></h1>
+						</li>
+						<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+					</ul>
+
+					<section class="top-bar-section">
+						<!-- Left Nav Section -->
+						<ul class="left">
+							<li class="has-dropdown">
+								<a href="/">what is ax</a>
+								<ul class="dropdown">
+									<li><a href="#">First link in dropdown</a></li>
+								</ul>
+							</li>
+							<li><a href="/">product overview</a></li>
+							<li class="act"><a href="/">pricing</a></li>
+							<li><a href="/">industry solutions</a></li>
+							<li class="last"><a href="/">about us</a></li>
+							<!-- Right Nav Section -->
+							<!--<ul class="right">-->
+								<li class="has-tip"><a href="#" class="button tiny lightgrey text-uppercase">Login</a></li>
+								<li class="has-tip"><a href="#" class="button tiny darkgreen text-uppercase">Request demo</a></li>
+							<!--</ul>-->
+						</ul>
+					</section>
+				</nav>
+			</div>
 		</div>
-		<nav class="small-12 medium-10 large-10 columns">
-			<ul class="mainNavigation inline-list left">
-				<li class="first"><a href="/">what is ax</a></li>
-				<li><a href="/">product overview</a></li>
-				<li class="act"><a href="/">pricing</a></li>
-				<li><a href="/">industry solutions</a></li>
-				<li class="last"><a href="/">about us</a></li>
-			</ul>
-			<a href="#" class="button tiny lightgrey text-uppercase">Login</a>
-			<a href="#" class="button tiny darkgreen text-uppercase">Request demo</a>
-		</nav>
 	</div>
 </div>
 

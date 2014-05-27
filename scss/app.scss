@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import "foundation";
 
 
 // Or selectively include components
@@ -52,7 +53,7 @@ $ci1: #76bd1d;
 $ci2: #313337;
 $ci3: #a1a5ae;
 $ci4: #555555;
-$ci5: #757982;
+$ci5: rgba(117, 121, 130, 0.54);
 $ci6: #009639;
 
 
@@ -78,6 +79,12 @@ body {
   }
   p {
 	font-size: 1rem;
+  }
+  a:hover {
+	text-decoration: underline;
+  }
+  a.button:hover {
+	text-decoration: none;
   }
 }
 
@@ -182,10 +189,10 @@ h3 {
 .txtdarkgreen {color: $ci6;}
 .txtlightgrey {color:$ci3;}
 
-.green {background: $ci1;}
-.darkgreen {background: $ci6;}
-.lightgrey {background:$ci3;}
-.yellow {background: #F8D928;}
+.green {background: $ci1  !important;}
+.darkgreen {background: $ci6 !important;}
+.lightgrey {background:$ci3 !important;}
+.yellow {background: #F8D928  !important;}
 
 .button.green {background: $ci1;}
 .button.darkgreen {background: $ci6;}
@@ -263,22 +270,29 @@ h3 {
   @extend .dosissemibold;
   @extend .gradient-lightgrey-reverse;
 
-  ul.mainNavigation {
-	margin:0 15px 0 0;
-	text-transform: uppercase;
-	li.first {
-	  margin-left:0;
-	}
+  .sticky.fixed {
+	border-bottom: 2px solid #76bd1d;
+	@extend .gradient-lightgrey-reverse;
+  }
+  ul{
 	li {
-	  line-height: 3;
-	  a {
+	  a, a span {
 		color: $ci5;
+	  }
+	  a:hover {
+		text-decoration: none;
 	  }
 	}
   }
-  .button {
-	margin: 10px 0 0 0;
+  li.has-tip {
+	padding-right: 5px;
   }
+  .button {
+	margin: 5px 5px 0 0;
+  }
+}
+.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+  background:#f4f4f4;
 }
 
 /* HERO ROW */
@@ -546,7 +560,7 @@ h3 {
   .accordion dd > a {
 	background: transparent;
 	padding:1rem;
-	margin-left: 72px;
+	padding-left: 90px;
 	font-size: 24px;
 	color: #313337;
 	@extend .dosissemibold;
