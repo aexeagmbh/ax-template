@@ -6814,7 +6814,7 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/* line 62, ../scss/app.scss */
+/* line 21, ../scss/app.scss */
 .arial, .priceRow table tr td, .solutionRow p, .faqRow .accordion .content.active, .footerRow .careers b,
 .footerRow .news b,
 .footerRow .blog b, .footerRow .careers a,
@@ -6842,49 +6842,49 @@ th.hide-for-touch {
 .footerRow .blog a strong {
   font-family: Arial, Verdana, sans-serif !important; }
 
-/* line 63, ../scss/app.scss */
+/* line 22, ../scss/app.scss */
 .dosisregular, .button.mega {
   font-family: 'dosisregular', Arial, sans-serif; }
 
-/* line 64, ../scss/app.scss */
+/* line 23, ../scss/app.scss */
 .dosislight, body {
   font-family: 'dosislight', Arial, sans-serif; }
 
-/* line 65, ../scss/app.scss */
+/* line 24, ../scss/app.scss */
 .dosismedium, .solutionRow h3 {
   font-family: 'dosismedium', Arial, sans-serif; }
 
-/* line 66, ../scss/app.scss */
+/* line 25, ../scss/app.scss */
 .dosisbold, body b,
 body strong {
   font-family: 'dosisbold', Arial, sans-serif; }
 
-/* line 67, ../scss/app.scss */
+/* line 26, ../scss/app.scss */
 .dosissemibold, .button, h1, h2, h3, h4, h5, .navigationRow, .productRow .greyBG p, .priceRow table th, .priceRow table tr td span.price, .solutionRow a, .faqRow .accordion dd > a {
   font-family: 'dosissemibold', Arial, Sans-serif; }
 
-/* line 68, ../scss/app.scss */
+/* line 27, ../scss/app.scss */
 .specialelite, .heroRow, .heroRow h2 {
   font-family: 'Special Elite', cursive, Arial, Sans-serif; }
 
-/* line 72, ../scss/app.scss */
+/* line 31, ../scss/app.scss */
 body {
   counter-reset: section; }
-  /* line 80, ../scss/app.scss */
+  /* line 39, ../scss/app.scss */
   body p {
     font-size: 1rem; }
-  /* line 83, ../scss/app.scss */
+  /* line 42, ../scss/app.scss */
   body a:hover {
     text-decoration: underline; }
-  /* line 86, ../scss/app.scss */
+  /* line 45, ../scss/app.scss */
   body a.button:hover {
     text-decoration: none; }
 
-/* line 92, ../scss/app.scss */
+/* line 51, ../scss/app.scss */
 .button {
   color: #fff !important; }
 
-/* line 96, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 .button.tiny {
   font-size: 0.9rem;
   padding-top: 0.225rem;
@@ -6892,7 +6892,7 @@ body {
   padding-bottom: 0.2875rem;
   padding-left: 1.2rem; }
 
-/* line 103, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 .button.small {
   padding-top: 0.575rem;
   padding-right: 1.9rem;
@@ -6900,7 +6900,7 @@ body {
   padding-left: 1.9rem;
   font-size: 0.8125rem; }
 
-/* line 110, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .button.mega {
   padding-top: 1rem;
   padding-right: 2.25rem;
@@ -6909,22 +6909,22 @@ body {
   font-size: 3.8rem;
   text-transform: uppercase; }
 
-/* line 120, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .text-uppercase {
   text-transform: uppercase; }
 
-/* line 123, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 h1, h2, h3, h4, h5 {
   color: #313337;
   text-transform: uppercase; }
 
-/* line 129, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 h2 {
   font-size: 70px; }
-  /* line 131, ../scss/app.scss */
+  /* line 90, ../scss/app.scss */
   h2 .large {
     font-size: 87px; }
-  /* line 134, ../scss/app.scss */
+  /* line 93, ../scss/app.scss */
   h2 span.subheader {
     display: block;
     color: #313337;
@@ -6932,11 +6932,11 @@ h2 {
     line-height: 1;
     text-transform: none; }
 
-/* line 143, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 h3 {
   font-size: 48px; }
 
-/* line 148, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .gradient-lightgrey, .reasonRow, .roiRow {
   background: #e9e9e9;
   /* Old Browsers */
@@ -6955,7 +6955,7 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#e9e9e9', GradientType=0 );
   /* IE6-9 */ }
 
-/* line 158, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 .gradient-lightgrey-reverse, .navigationRow, .navigationRow .sticky.fixed {
   background: #fdfdfd;
   background: -moz-linear-gradient(top, #fdfdfd 0%, #efefef 100%);
@@ -6966,7 +6966,7 @@ h3 {
   background: linear-gradient(to bottom, #fdfdfd 0%, #efefef 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#efefef', GradientType=0 ); }
 
-/* line 168, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 .gradient-yellow, .button.yellow, .priceRow table tr td span.price {
   background: #f9e24d;
   background: -moz-linear-gradient(top, #f9e24d 0%, #f8d928 100%);
@@ -6977,79 +6977,79 @@ h3 {
   background: linear-gradient(to bottom, #f9e24d 0%, #f8d928 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9e24d', endColorstr='#f8d928', GradientType=0 ); }
 
-/* line 179, ../scss/app.scss */
+/* line 138, ../scss/app.scss */
 .greenborder {
   display: block;
   border-bottom: 2px solid #76bd1d; }
 
-/* line 183, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .greenborder.vertical {
   border-right: 2px solid #76bd1d;
   border-bottom: none; }
 
-/* line 188, ../scss/app.scss */
+/* line 147, ../scss/app.scss */
 .txtgreen {
   color: #76bd1d; }
 
-/* line 189, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 .txtdarkgreen {
   color: #009639; }
 
-/* line 190, ../scss/app.scss */
+/* line 149, ../scss/app.scss */
 .txtlightgrey {
   color: #a1a5ae; }
 
-/* line 192, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 .green {
   background: #76bd1d !important; }
 
-/* line 193, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .darkgreen {
   background: #009639 !important; }
 
-/* line 194, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 .lightgrey {
   background: #a1a5ae !important; }
 
-/* line 195, ../scss/app.scss */
+/* line 154, ../scss/app.scss */
 .yellow {
   background: #F8D928  !important; }
 
-/* line 197, ../scss/app.scss */
+/* line 156, ../scss/app.scss */
 .button.green {
   background: #76bd1d; }
 
-/* line 198, ../scss/app.scss */
+/* line 157, ../scss/app.scss */
 .button.darkgreen {
   background: #009639; }
 
-/* line 199, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .button.lightgrey {
   background: #a1a5ae; }
 
-/* line 200, ../scss/app.scss */
+/* line 159, ../scss/app.scss */
 .button.yellow {
   border-top: 1px solid  #fcef88;
   border-bottom: 1px solid #dcc647; }
 
-/* line 205, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 .button.green:hover, .button.green:focus {
   background: #5e9717; }
 
-/* line 208, ../scss/app.scss */
+/* line 167, ../scss/app.scss */
 .button.darkgreen:hover, .button.darkgreen:focus {
   background: #00782d; }
 
-/* line 211, ../scss/app.scss */
+/* line 170, ../scss/app.scss */
 .button.lightgrey:hover, .button.lightgrey:focus {
   background: #80848b; }
 
-/* line 214, ../scss/app.scss */
+/* line 173, ../scss/app.scss */
 .button.yellow:hover, .button.yellow:focus {
   background: #fae468; }
 
 /* Rounded Stuff */
-/* line 220, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 .roundFull, .howworkRow ol li:before, .companyRow .companyImg, .testimonialRow a.orbit-next,
 .testimonialRow a.orbit-prev {
   border-radius: 200px 200px 200px 200px;
@@ -7057,159 +7057,160 @@ h3 {
   -webkit-border-radius: 200px 200px 200px 200px;
   border: 0px solid #fff; }
 
-/* line 230, ../scss/app.scss */
+/* line 189, ../scss/app.scss */
 .padTop10 {
   padding-top: 10px; }
 
-/* line 231, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 .padTop15 {
   padding-top: 15px; }
 
-/* line 232, ../scss/app.scss */
+/* line 191, ../scss/app.scss */
 .padTop20 {
   padding-top: 20px; }
 
-/* line 233, ../scss/app.scss */
+/* line 192, ../scss/app.scss */
 .padTop25 {
   padding-top: 25px; }
 
-/* line 235, ../scss/app.scss */
+/* line 194, ../scss/app.scss */
 .padBot10 {
   padding-bottom: 10px; }
 
-/* line 236, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 .padBot15 {
   padding-bottom: 15px; }
 
-/* line 237, ../scss/app.scss */
+/* line 196, ../scss/app.scss */
 .padBot20 {
   padding-bottom: 20px; }
 
-/* line 238, ../scss/app.scss */
+/* line 197, ../scss/app.scss */
 .padBot25 {
   padding-bottom: 25px; }
 
-/* line 240, ../scss/app.scss */
+/* line 199, ../scss/app.scss */
 .marTop10 {
   margin-top: 10px; }
 
-/* line 241, ../scss/app.scss */
+/* line 200, ../scss/app.scss */
 .marTop15 {
   margin-top: 15px; }
 
-/* line 242, ../scss/app.scss */
+/* line 201, ../scss/app.scss */
 .marTop20 {
   margin-top: 20px; }
 
-/* line 243, ../scss/app.scss */
+/* line 202, ../scss/app.scss */
 .marTop25 {
   margin-top: 25px; }
 
-/* line 244, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 .marTop50 {
   margin-top: 50px; }
 
-/* line 246, ../scss/app.scss */
+/* line 205, ../scss/app.scss */
 .marBot10 {
   margin-bottom: 10px; }
 
-/* line 247, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 .marBot15 {
   margin-bottom: 15px; }
 
-/* line 248, ../scss/app.scss */
+/* line 207, ../scss/app.scss */
 .marBot20 {
   margin-bottom: 20px; }
 
-/* line 249, ../scss/app.scss */
+/* line 208, ../scss/app.scss */
 .marBot25 {
   margin-bottom: 25px; }
 
-/* line 250, ../scss/app.scss */
+/* line 209, ../scss/app.scss */
 .marBot50 {
   margin-bottom: 50px; }
 
-/* line 254, ../scss/app.scss */
+/* line 213, ../scss/app.scss */
 .container {
   position: relative;
   display: block;
   width: 100%; }
 
 /* Navigation ROW */
-/* line 267, ../scss/app.scss */
+/* line 226, ../scss/app.scss */
 .navigationRow {
   padding: 10px 0 0;
   border-bottom: 2px solid #76bd1d; }
-  /* line 273, ../scss/app.scss */
+  /* line 232, ../scss/app.scss */
   .navigationRow .sticky.fixed {
     border-bottom: 2px solid #76bd1d; }
-  /* line 279, ../scss/app.scss */
+  /* line 238, ../scss/app.scss */
   .navigationRow ul li a, .navigationRow ul li a span {
-    color: rgba(117, 121, 130, 0.54); }
-  /* line 282, ../scss/app.scss */
+    color: #757982; }
+  /* line 241, ../scss/app.scss */
   .navigationRow ul li a:hover {
     text-decoration: none; }
-  /* line 287, ../scss/app.scss */
+  /* line 246, ../scss/app.scss */
   .navigationRow li.has-tip {
     padding-right: 5px; }
-  /* line 290, ../scss/app.scss */
+  /* line 249, ../scss/app.scss */
   .navigationRow .button {
     margin: 5px 5px 0 0; }
 
-/* line 294, ../scss/app.scss */
+/* line 253, ../scss/app.scss */
 .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  color: #555555; }
 
 /* HERO ROW */
-/* line 299, ../scss/app.scss */
+/* line 259, ../scss/app.scss */
 .heroRow {
   min-height: 544px;
   background: url(../img/hero.jpg) top center no-repeat; }
-  /* line 303, ../scss/app.scss */
+  /* line 263, ../scss/app.scss */
   .heroRow h2 {
     margin: 80px 0 60px;
     font-size: 46px; }
-  /* line 308, ../scss/app.scss */
+  /* line 268, ../scss/app.scss */
   .heroRow a {
     color: #76bd1d;
     font-size: 36px; }
 
 /* Reason Row */
-/* line 315, ../scss/app.scss */
+/* line 275, ../scss/app.scss */
 .reasonRow {
   min-height: 740px;
   padding: 90px 0 50px 0; }
-  /* line 320, ../scss/app.scss */
+  /* line 280, ../scss/app.scss */
   .reasonRow h4 {
     font-size: 18px;
     color: #555555; }
-  /* line 324, ../scss/app.scss */
+  /* line 284, ../scss/app.scss */
   .reasonRow img {
     margin-bottom: 15px; }
 
 /* BadgeRow */
-/* line 330, ../scss/app.scss */
+/* line 290, ../scss/app.scss */
 .badgeRow {
   height: 193px;
   background: #3fa76a url(../img/green-band.jpg) top center no-repeat;
   border-top: 7px solid #e9e9e9;
   border-bottom: 7px solid #e9e9e9; }
-  /* line 335, ../scss/app.scss */
+  /* line 295, ../scss/app.scss */
   .badgeRow img {
     position: relative;
     top: -40px; }
 
 /* HowWorkRow */
-/* line 343, ../scss/app.scss */
+/* line 303, ../scss/app.scss */
 .howworkRow .row > div {
   padding-bottom: 50px;
   margin-bottom: 60px;
   border-bottom: 2px solid #76bd1d; }
-/* line 349, ../scss/app.scss */
+/* line 309, ../scss/app.scss */
 .howworkRow ol {
   border-left: 1px dashed #009639;
   list-style-position: outside; }
-  /* line 352, ../scss/app.scss */
+  /* line 312, ../scss/app.scss */
   .howworkRow ol li:before {
     display: block;
     float: left;
@@ -7224,77 +7225,77 @@ h3 {
     display: table;
     counter-increment: section;
     content: counter(section) ". "; }
-  /* line 369, ../scss/app.scss */
+  /* line 329, ../scss/app.scss */
   .howworkRow ol li {
     height: 55px;
     margin-bottom: 54px;
     padding-left: 30px;
     list-style-type: none;
     font-size: 18px; }
-    /* line 375, ../scss/app.scss */
+    /* line 335, ../scss/app.scss */
     .howworkRow ol li span {
       float: left;
       display: block;
       padding-top: 8px; }
-  /* line 381, ../scss/app.scss */
+  /* line 341, ../scss/app.scss */
   .howworkRow ol li:after {
     clear: both;
     content: " ";
     display: table; }
-  /* line 386, ../scss/app.scss */
+  /* line 346, ../scss/app.scss */
   .howworkRow ol li:last-child {
     margin-bottom: 0; }
 
 /* Product Overview Row */
-/* line 393, ../scss/app.scss */
+/* line 353, ../scss/app.scss */
 .productRow {
   margin-bottom: 75px; }
-  /* line 396, ../scss/app.scss */
+  /* line 356, ../scss/app.scss */
   .productRow .greyBG {
     background: #e1e3e4; }
-    /* line 399, ../scss/app.scss */
+    /* line 359, ../scss/app.scss */
     .productRow .greyBG p {
       color: #a1a5ae;
       font-size: 1.2rem;
       padding: 10px 10% 30px; }
-    /* line 406, ../scss/app.scss */
+    /* line 366, ../scss/app.scss */
     .productRow .greyBG a {
       font-size: 1.1rem;
       text-transform: uppercase;
       color: #009639; }
-  /* line 413, ../scss/app.scss */
+  /* line 373, ../scss/app.scss */
   .productRow h4 {
     display: block;
     padding: 10px 0;
     background: #76bd1d;
     color: #fff; }
-  /* line 419, ../scss/app.scss */
+  /* line 379, ../scss/app.scss */
   .productRow .columns:nth-child(3) .greyBG h4 {
     background: #76bd1d; }
-  /* line 420, ../scss/app.scss */
+  /* line 380, ../scss/app.scss */
   .productRow .columns:nth-child(4) .greyBG h4 {
     background: #009639; }
-  /* line 421, ../scss/app.scss */
+  /* line 381, ../scss/app.scss */
   .productRow .columns:nth-child(5) .greyBG h4 {
     background: #006535; }
 
 /* Try Row */
-/* line 425, ../scss/app.scss */
+/* line 385, ../scss/app.scss */
 .tryRow {
   margin-bottom: 95px; }
-  /* line 428, ../scss/app.scss */
+  /* line 388, ../scss/app.scss */
   .tryRow h4 {
     font-size: 30px;
     color: #686b6d; }
 
 /* ROI Calculator Row */
-/* line 435, ../scss/app.scss */
+/* line 395, ../scss/app.scss */
 .roiRow {
   margin-bottom: 95px;
   padding: 100px 3% 100px; }
 
 /* Pricing Table Row */
-/* line 444, ../scss/app.scss */
+/* line 404, ../scss/app.scss */
 .priceRow h4 {
   padding: 10px 0;
   margin-bottom: 0;
@@ -7305,29 +7306,29 @@ h3 {
   -webkit-border-radius: 5px 5px 0px 0px;
   border: 0px solid #000000;
   border-bottom: 2px solid #76bd1d; }
-/* line 455, ../scss/app.scss */
+/* line 415, ../scss/app.scss */
 .priceRow table {
   border-collapse: collapse;
   border: none; }
-  /* line 458, ../scss/app.scss */
+  /* line 418, ../scss/app.scss */
   .priceRow table th {
     background: #313337;
     color: #fff;
     text-transform: uppercase;
     font-size: 18px; }
-  /* line 466, ../scss/app.scss */
+  /* line 426, ../scss/app.scss */
   .priceRow table tr td {
     font-weight: bold;
     color: #a1a5ae; }
-    /* line 470, ../scss/app.scss */
+    /* line 430, ../scss/app.scss */
     .priceRow table tr td i.fi-check {
       color: #009639;
       font-size: 18px; }
-    /* line 474, ../scss/app.scss */
+    /* line 434, ../scss/app.scss */
     .priceRow table tr td i.fi-minus {
       color: #eec9c5;
       font-size: 18px; }
-    /* line 478, ../scss/app.scss */
+    /* line 438, ../scss/app.scss */
     .priceRow table tr td span.price {
       display: inline-block;
       padding: 10px 25px;
@@ -7335,189 +7336,192 @@ h3 {
       font-size: 24px;
       border-top: 1px solid  #fcef88;
       border-bottom: 1px solid #dcc647; }
-  /* line 489, ../scss/app.scss */
+  /* line 449, ../scss/app.scss */
   .priceRow table tr td.text-right {
     color: #313337; }
-    /* line 491, ../scss/app.scss */
+    /* line 451, ../scss/app.scss */
     .priceRow table tr td.text-right span {
       margin-left: 10px; }
 
 /* Solution Row */
-/* line 501, ../scss/app.scss */
+/* line 461, ../scss/app.scss */
 .solutionRow {
   margin-bottom: 95px; }
-  /* line 503, ../scss/app.scss */
+  /* line 463, ../scss/app.scss */
   .solutionRow .entry {
     margin-top: 30px; }
-  /* line 506, ../scss/app.scss */
+  /* line 466, ../scss/app.scss */
   .solutionRow .entry .underline {
     padding-bottom: 50px;
     border-bottom: 2px solid #f9e14e; }
-  /* line 510, ../scss/app.scss */
+  /* line 470, ../scss/app.scss */
   .solutionRow h3 {
     font-size: 36px;
     color: #009639; }
-  /* line 515, ../scss/app.scss */
+  /* line 475, ../scss/app.scss */
   .solutionRow p {
     font-size: 20px;
-    color: rgba(117, 121, 130, 0.54); }
-  /* line 520, ../scss/app.scss */
+    color: #757982; }
+  /* line 480, ../scss/app.scss */
   .solutionRow a {
     font-size: 22px;
     color: #76bd1d; }
 
 /* Company Row */
-/* line 528, ../scss/app.scss */
+/* line 488, ../scss/app.scss */
 .companyRow {
   margin-bottom: 50px; }
-  /* line 530, ../scss/app.scss */
+  /* line 490, ../scss/app.scss */
   .companyRow h2 {
     margin-bottom: 30px; }
-    /* line 532, ../scss/app.scss */
+    /* line 492, ../scss/app.scss */
     .companyRow h2 span.subheader {
       display: block;
       color: #a1a5ae;
       font-size: 42px;
       line-height: 1;
       text-transform: none; }
-  /* line 540, ../scss/app.scss */
+  /* line 500, ../scss/app.scss */
   .companyRow .companyImg {
     max-width: 170px;
     margin: 0 auto 20px auto;
     background: transparent;
     border: 3px solid transparent; }
-  /* line 547, ../scss/app.scss */
+  /* line 507, ../scss/app.scss */
   .companyRow .companyImg:hover {
     background: #76bd1d;
     border: 3px solid #76bd1d; }
 
 /* FAQ Row */
-/* line 555, ../scss/app.scss */
+/* line 515, ../scss/app.scss */
 .faqRow {
   margin-bottom: 100px; }
-  /* line 557, ../scss/app.scss */
+  /* line 517, ../scss/app.scss */
   .faqRow h3 {
     margin: 0 0 30px 0; }
-  /* line 560, ../scss/app.scss */
+  /* line 520, ../scss/app.scss */
   .faqRow .accordion dd > a {
     background: transparent;
     padding: 1rem;
     padding-left: 90px;
     font-size: 24px;
     color: #313337; }
-  /* line 569, ../scss/app.scss */
+  /* line 529, ../scss/app.scss */
+  .faqRow .accordion dd > a:hover {
+    text-decoration: none; }
+  /* line 532, ../scss/app.scss */
   .faqRow .accordion .content.active {
     background: none;
     margin-left: 100px;
     font-size: 15px;
     color: #313337; }
-  /* line 576, ../scss/app.scss */
+  /* line 539, ../scss/app.scss */
   .faqRow dd {
     min-height: 72px; }
-  /* line 579, ../scss/app.scss */
+  /* line 542, ../scss/app.scss */
   .faqRow dd:nth-child(even) {
     background: white url(../img/acc_light_plus.jpg) top left no-repeat; }
-  /* line 582, ../scss/app.scss */
+  /* line 545, ../scss/app.scss */
   .faqRow dd:nth-child(odd) {
     background: #f2f2f2 url(../img/acc_dark_plus.jpg) top left no-repeat; }
-  /* line 585, ../scss/app.scss */
+  /* line 548, ../scss/app.scss */
   .faqRow dd:nth-child(even).active {
     background: white url(../img/acc_grey_minus.jpg) top left no-repeat; }
-  /* line 588, ../scss/app.scss */
+  /* line 551, ../scss/app.scss */
   .faqRow dd:nth-child(odd).active {
     background: #f2f2f2 url(../img/acc_grey_minus.jpg) top left no-repeat; }
 
 /* Testimonial Row */
-/* line 594, ../scss/app.scss */
+/* line 557, ../scss/app.scss */
 .testimonialRow {
   min-height: 612px;
   margin-bottom: 100px;
   padding: 50px 0;
   background: #e8e8e8 url(../img/gray-band.jpg) top center no-repeat;
   background-size: cover; }
-  /* line 601, ../scss/app.scss */
+  /* line 564, ../scss/app.scss */
   .testimonialRow blockquote,
   .testimonialRow p {
     font-size: 30px;
     line-height: 1.4;
     border: none; }
-    /* line 605, ../scss/app.scss */
+    /* line 568, ../scss/app.scss */
     .testimonialRow blockquote cite,
     .testimonialRow p cite {
       margin-top: 1em;
       color: #7f8b94;
       font-size: 30px;
       font-style: normal; }
-  /* line 612, ../scss/app.scss */
+  /* line 575, ../scss/app.scss */
   .testimonialRow .large {
     font-size: 48px; }
-    /* line 614, ../scss/app.scss */
+    /* line 577, ../scss/app.scss */
     .testimonialRow .large cite {
       margin-top: 1rem;
       color: #7f8b94;
       font-size: 30px;
       font-style: normal; }
-  /* line 621, ../scss/app.scss */
+  /* line 584, ../scss/app.scss */
   .testimonialRow span.greenborder {
     display: inline-block;
     margin: 20px auto;
     width: 50%; }
-  /* line 626, ../scss/app.scss */
+  /* line 589, ../scss/app.scss */
   .testimonialRow ul.orbit-content {
     margin: 30px 0 0 0; }
-  /* line 630, ../scss/app.scss */
+  /* line 593, ../scss/app.scss */
   .testimonialRow a.orbit-next,
   .testimonialRow a.orbit-prev {
     height: 50px;
     width: 50px;
     background: #76bd1d; }
-  /* line 637, ../scss/app.scss */
+  /* line 600, ../scss/app.scss */
   .testimonialRow a.orbit-prev span {
     left: 8px; }
-  /* line 642, ../scss/app.scss */
+  /* line 605, ../scss/app.scss */
   .testimonialRow ol.orbit-bullets li.active {
     background: #76bd1d; }
 
 /* Footer Row */
-/* line 649, ../scss/app.scss */
+/* line 612, ../scss/app.scss */
 .footerRow {
   margin-bottom: 100px; }
-  /* line 651, ../scss/app.scss */
+  /* line 614, ../scss/app.scss */
   .footerRow h4 {
     color: #009639;
     margin-bottom: 30px; }
-  /* line 661, ../scss/app.scss */
+  /* line 624, ../scss/app.scss */
   .footerRow .careers .entry,
   .footerRow .news .entry,
   .footerRow .blog .entry {
     font-size: 16px; }
-  /* line 664, ../scss/app.scss */
+  /* line 627, ../scss/app.scss */
   .footerRow .careers b,
   .footerRow .news b,
   .footerRow .blog b {
     display: block;
     font-size: 14px;
-    color: rgba(117, 121, 130, 0.54); }
-  /* line 670, ../scss/app.scss */
+    color: #757982; }
+  /* line 633, ../scss/app.scss */
   .footerRow .careers a,
   .footerRow .news a,
   .footerRow .blog a {
     font-style: italic;
     display: block;
     color: #76bd1d; }
-  /* line 678, ../scss/app.scss */
+  /* line 641, ../scss/app.scss */
   .footerRow .careers .shadowbox {
     width: 100%;
     background: #fff;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
-    /* line 684, ../scss/app.scss */
+    /* line 647, ../scss/app.scss */
     .footerRow .careers .shadowbox h5 {
       padding: 10px;
       background: #009639;
       color: #fff; }
-    /* line 689, ../scss/app.scss */
+    /* line 652, ../scss/app.scss */
     .footerRow .careers .shadowbox .entry {
       width: 100%;
       padding: 10px 3%;

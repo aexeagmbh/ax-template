@@ -3,47 +3,6 @@
 @import "foundation";
 
 
-// Or selectively include components
-//@import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switch",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
-
-
-
-
 // Imports
 @import "webfonts.css" screen;
 @import "foundation-icons.css" screen;
@@ -53,7 +12,7 @@ $ci1: #76bd1d;
 $ci2: #313337;
 $ci3: #a1a5ae;
 $ci4: #555555;
-$ci5: rgba(117, 121, 130, 0.54);
+$ci5: #757982;
 $ci6: #009639;
 
 
@@ -293,6 +252,7 @@ h3 {
 }
 .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
   background:#f4f4f4;
+  color: $ci4;
 }
 
 /* HERO ROW */
@@ -565,6 +525,9 @@ h3 {
 	color: #313337;
 	@extend .dosissemibold;
 
+  }
+  .accordion dd > a:hover {
+	text-decoration: none;
   }
   .accordion .content.active {
 	background: none;
