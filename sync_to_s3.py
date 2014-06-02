@@ -18,6 +18,7 @@ DIRS_TO_SYNC = [
     'fonts',
     'js',
     'css',
+    'content_img',
 ]
 
 bucket_name = 'ax-semantics'
