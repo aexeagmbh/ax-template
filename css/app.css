@@ -8927,7 +8927,7 @@ h3 {
 /* line 260, ../scss/app.scss */
 .heroRow {
   min-height: 544px;
-  background: url(../img/hero.jpg) top center no-repeat;
+  background: url(https://ax-semantics.s3.amazonaws.com/img/hero.jpg) top center no-repeat;
 }
 /* line 264, ../scss/app.scss */
 .heroRow h2 {
@@ -8960,7 +8960,7 @@ h3 {
 /* line 291, ../scss/app.scss */
 .badgeRow {
   height: 193px;
-  background: #3fa76a url(../img/green-band.jpg) top center no-repeat;
+  background: #3fa76a url(https://ax-semantics.s3.amazonaws.com/img/green-band.jpg) top center no-repeat;
   border-top: 7px solid #e9e9e9;
   border-bottom: 7px solid #e9e9e9;
 }
@@ -9234,19 +9234,19 @@ h3 {
 }
 /* line 543, ../scss/app.scss */
 .faqRow dd:nth-child(even) {
-  background: white url(../img/acc_light_plus.jpg) top left no-repeat;
+  background: white url(https://ax-semantics.s3.amazonaws.com/img/acc_light_plus.jpg) top left no-repeat;
 }
 /* line 546, ../scss/app.scss */
 .faqRow dd:nth-child(odd) {
-  background: #f2f2f2 url(../img/acc_dark_plus.jpg) top left no-repeat;
+  background: #f2f2f2 url(https://ax-semantics.s3.amazonaws.com/img/acc_dark_plus.jpg) top left no-repeat;
 }
 /* line 549, ../scss/app.scss */
 .faqRow dd:nth-child(even).active {
-  background: white url(../img/acc_grey_minus.jpg) top left no-repeat;
+  background: white url(https://ax-semantics.s3.amazonaws.com/img/acc_grey_minus.jpg) top left no-repeat;
 }
 /* line 552, ../scss/app.scss */
 .faqRow dd:nth-child(odd).active {
-  background: #f2f2f2 url(../img/acc_grey_minus.jpg) top left no-repeat;
+  background: #f2f2f2 url(https://ax-semantics.s3.amazonaws.com/img/acc_grey_minus.jpg) top left no-repeat;
 }
 
 /* Testimonial Row */
@@ -9255,7 +9255,7 @@ h3 {
   min-height: 612px;
   margin-bottom: 100px;
   padding: 50px 0;
-  background: #e8e8e8 url(../img/gray-band.jpg) top center no-repeat;
+  background: #e8e8e8 url(https://ax-semantics.s3.amazonaws.com/img/gray-band.jpg) top center no-repeat;
   background-size: cover;
 }
 /* line 565, ../scss/app.scss */
