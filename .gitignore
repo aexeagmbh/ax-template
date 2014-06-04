@@ -3,4 +3,5 @@
 *.DS_Store
 /stylesheets/*
 .rbenv-version
-*.swp
+*.sw[op]
+*~
