@@ -9389,3 +9389,11 @@ dd:nth-child(odd).active {
   margin: 0 0 10px 0;
   border-bottom: 1px solid #ccc;
 }
+
+/* line 681, ../scss/app.scss */
+.footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 2px solid #76bd1d;
+  background-color: #efefef;
+}

@@ -677,3 +677,11 @@ dd:nth-child(odd).active {
         }
     }
 }
+
+.footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    border-top: 2px solid $ci1;
+    background-color: #efefef;
+}
