@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python2
 # coding=utf-8
 
 import os
@@ -41,7 +41,7 @@ def upload_file(filename):
     k.set_contents_from_filename(filename,
             cb=percent_cb, num_cb=100)
     bucket.set_acl('public-read', k.key)
-    print("\nFile completed...")
+    print "\nFile completed..."
 
 if len(sys.argv) > 1:
     for filename in sys.argv[1:]:
