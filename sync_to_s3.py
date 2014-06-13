@@ -43,10 +43,14 @@ def upload_file(filename):
     bucket.set_acl('public-read', k.key)
     print("\nFile completed...")
 
-for filename in FILES_TO_SYNC:
-    upload_file(filename)
+if len(sys.argv) > 1:
+    for filename in sys.argv[1:]:
+        upload_file(filename)
+else:
+    for filename in FILES_TO_SYNC:
+        upload_file(filename)
 
-for dirname in DIRS_TO_SYNC:
-    for path, subdirs, files in os.walk(dirname):
-        for name in files:
-            upload_file(os.path.join(path, name))
+    for dirname in DIRS_TO_SYNC:
+        for path, subdirs, files in os.walk(dirname):
+            for name in files:
+                upload_file(os.path.join(path, name))
