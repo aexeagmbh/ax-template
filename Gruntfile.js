@@ -4,12 +4,15 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
+        includePaths: [
+          'bower_components/foundation/scss',
+          'bower_components/foundation-icon-fonts'
+        ]
       },
       dist: {
-        options: {
-          outputStyle: 'compressed'
-        },
+        //options: {
+        //  outputStyle: 'compressed'
+        //},
         files: {
           'css/app.css': 'scss/app.scss'
         }
@@ -29,7 +32,6 @@ module.exports = function(grunt) {
       main: {
         files: [
           {expand: true, cwd: 'bower_components/foundation/js/',    src: '**',                   dest: 'js/'},
-          {expand: true, cwd: 'bower_components/foundation/css/',   src: 'normalize.css',        dest: 'css/'},
           {expand: true, cwd: 'bower_components/foundation-icons/', src: 'foundation-icons.css', dest: 'css/'},
         ],
       },
