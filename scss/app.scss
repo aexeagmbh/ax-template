@@ -76,6 +76,11 @@ body {
     @extend .dosisregular;
 }
 
+// align buttons with fieldsets
+.button-holder {
+    margin: $subheader-top-margin 2px;
+}
+
 .text-uppercase {text-transform: uppercase;}
 
 // Headlines
