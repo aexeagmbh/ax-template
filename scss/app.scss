@@ -684,9 +684,31 @@ h3 {
 }
 
 .footer {
+    margin-top: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
 
     border-top: 2px solid $ci1;
     background-color: #efefef;
+}
+
+// case study plugin
+.casestudy {
+    color: $ci5;
+}
+
+.casestudy .fi-arrow-left {
+    font-size: 3rem;
+    color: $ci1;
+//    text-shadow: 0 0 0.5rem $body-bg,0 0 0.7rem $body-bg,0 0 1.2rem $body-bg,0 0 1.5rem $ci1,0 0 2rem $ci1;
+}
+
+.casestudy h2 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    color: $ci6;
+}
+
+.casestudy .subtitle {
+    margin-bottom: 1rem;
 }
