@@ -81,6 +81,11 @@ body {
     margin: $subheader-top-margin 2px;
 }
 
+// prevent buttons from making table rows too large
+.dataTable .button {
+    margin: 0;
+}
+
 .text-uppercase {text-transform: uppercase;}
 
 // Headlines
