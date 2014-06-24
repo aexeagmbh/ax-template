@@ -86,6 +86,14 @@ body {
     margin: 0;
 }
 
+table td.row-link {
+    cursor: pointer;
+}
+
+table.hover tr:hover {
+    background-color: #eee;
+}
+
 .text-uppercase {text-transform: uppercase;}
 
 // Headlines
