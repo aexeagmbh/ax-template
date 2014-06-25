@@ -734,3 +734,18 @@ h3 {
 .casestudy .extrainfo_text {
     margin-bottom: 3em;
 }
+
+.journal {
+  .alert {
+    background-color: $alert-color;
+  }
+  .success {
+    background-color: $success-color;
+  }
+  .warning {
+    background-color: $warning-color;
+  }
+  .info {
+    background-color: $info-color;
+  }
+}
