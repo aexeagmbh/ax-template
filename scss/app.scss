@@ -749,3 +749,6 @@ h3 {
     background-color: $info-color;
   }
 }
+#checklist .complete {
+  text-decoration: line-through;
+}
