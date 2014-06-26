@@ -755,3 +755,7 @@ h3 {
 #account_status {
   width: 100%;
 }
+/* button with lower hight */
+.low {
+  @include button-size($padding:$button-tny);
+}
