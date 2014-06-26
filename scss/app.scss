@@ -757,5 +757,6 @@ h3 {
 }
 /* button with lower hight */
 .low {
-  @include button-size($padding:$button-tny);
+  padding-top: 7px;
+  padding-bottom: 6px;
 }
