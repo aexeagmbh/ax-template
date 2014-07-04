@@ -1,3 +1,4 @@
+/* jshint node: true */
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -14,7 +15,7 @@ module.exports = function(grunt) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'css/app.css': 'scss/app.scss'
+                    'css/ax-template.css': 'scss/app.scss'
                 }
             }
         },
@@ -28,27 +29,19 @@ module.exports = function(grunt) {
             }
         },
 
-        copy: {
-            main: {
-                files: [
-                    {expand: true, cwd: 'bower_components/foundation/js/',    src: '**',                   dest: 'js/'},
-                    {expand: true, cwd: 'bower_components/foundation-icons/', src: 'foundation-icons.css', dest: 'css/'}
-                ]
-            }
-        },
 
         jshint: {
-            all: ['Gruntfile.js', 'js/**/*.js'],
-            jshintrc: true
+            all: ['Gruntfile.js', 'js/ax-template/**/*.js'],
+            options: {
+                jshintrc: true
+            }
         },
 
         concat: {
             "ax-template": {
                 dest: 'js/ax-template.js',
                 src: [
-                    'bower_components/foundation/js/vendor/jquery.js',
-                    'bower_components/foundation/js/vendor/modernizr.js',
-                    'bower_components/foundation/js/foundation.js'
+                    'js/ax-template/app.js'
                 ]
             }
         },
@@ -70,6 +63,6 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('buildJs', ['concat', 'uglify']);
-    grunt.registerTask('build', ['sass', 'buildJs', 'copy']);
+    grunt.registerTask('build', ['sass', 'buildJs']);
     grunt.registerTask('default', ['build', 'watch']);
-}
+};
