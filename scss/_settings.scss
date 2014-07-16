@@ -1284,4 +1284,5 @@ $navigationRow-height: rem-calc($topbar-height);
 $navigationRow-border-bottom-width: rem-calc(2px);
 $navigationRow-margin-bottom: rem-calc(20px);
 
-$navigationRow-true-outer-height: $navigationRow-height + $navigationRow-border-bottom-width + $navigationRow-margin-bottom;
+$navigationRow-outer-height: $navigationRow-height + $navigationRow-border-bottom-width;
+$navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-margin-bottom;
