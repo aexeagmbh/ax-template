@@ -1,11 +1,12 @@
+@import "foundation/scss/normalize";
 @import "webfonts";
 
 @import "settings";
-@import "foundation";
-@import "normalize";
+@import "foundation/scss/foundation";
+
 
 $fi-path: "../fonts";
-@import "foundation-icons";
+@import "foundation-icon-fonts/foundation-icons";
 
 // Variables
 $ci1: #76bd1d;
@@ -696,6 +697,7 @@ h3 {
     }
 }
 
+footer,
 .footer {
     margin-top: 1em;
     padding-top: 2em;

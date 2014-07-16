@@ -7,7 +7,7 @@ module.exports = function(grunt) {
             options: {
                 includePaths: [
                     'bower_components/foundation/scss',
-                    'bower_components/foundation-icon-fonts'
+                    'bower_components'
                 ]
             },
             dist: {
