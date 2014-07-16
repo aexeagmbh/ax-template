@@ -235,6 +235,10 @@ h3 {
 .marBot25 {margin-bottom: 25px;}
 .marBot50 {margin-bottom: 50px;}
 
+.navigationRow-true-outer-height-margin {
+  margin-top: $navigationRow-true-outer-height;
+}
+
 
 // Special Items
 .container {
@@ -293,8 +297,8 @@ h3 {
 /* Navigation ROW */
 .navigationRow {
     padding: 0 0 0 0;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #76bd1d;
+    margin-bottom: $navigationRow-margin-bottom;
+    border-bottom: $navigationRow-border-bottom-width solid #76bd1d;
     @extend .dosissemibold;
     @extend .gradient-lightgrey-reverse;
 
