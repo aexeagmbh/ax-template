@@ -8,10 +8,11 @@ window.AX.foundation.settingCallBacks = window.AX.foundation.settingCallBacks ||
     var foundationMagellanDefaultSettingsCallBack;
 
     foundationMagellanDefaultSettingsCallBack = function () {
+        var navigationRowOuterHeight =  $('.navigationRow').outerHeight();
         return {
-            'threshold': (-1) * $('.navigationRow').outerHeight(),
-            'destination_threshold': 35,
-            'fixed_top': $('.navigationRow').outerHeight()
+            'threshold': (-1) * navigationRowOuterHeight,
+            'destination_threshold':navigationRowOuterHeight,
+            'fixed_top': navigationRowOuterHeight
         };
     };
 
