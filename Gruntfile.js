@@ -43,6 +43,10 @@ module.exports = function(grunt) {
                 src: [
                     'js/ax-template/app.js'
                 ]
+            },
+            "foundation": {
+                dest: 'js/foundation.js',
+                src: ['bower_components/foundation/js/foundation/foundation.js', 'bower_components/foundation/js/foundation/*.js']
             }
         },
 
@@ -50,6 +54,10 @@ module.exports = function(grunt) {
             build: {
                 src: 'js/ax-template.js',
                 dest: 'js/ax-template.min.js'
+            },
+            foundation: {
+                src: 'js/foundation.js',
+                dest: 'js/foundation.min.js'
             }
         }
     });
