@@ -655,6 +655,8 @@ $include-html-accordion-classes: $include-html-classes;
 
 // $magellan-bg: #fff;
 // $magellan-padding: 10px;
+$magellan-bg: $primary-color;
+//$magellan-padding: 0;
 
 // Off-canvas
 
@@ -1009,19 +1011,18 @@ $include-html-accordion-classes: $include-html-classes;
 // We use this to control the definition
 // $sub-nav-font-family: $body-font-family;
 // $sub-nav-font-size: rem-calc(14);
-// $sub-nav-font-color: #999;
+$sub-nav-font-color: #fff;
 // $sub-nav-font-weight: normal;
 // $sub-nav-text-decoration: none;
 // $sub-nav-padding: rem-calc(3 16);
 // $sub-nav-border-radius: 3px;
 // $sub-nav-font-color-hover: scale-color($sub-nav-font-color, $lightness: -25%);
 
-
 // We use these to control the active item styles
 // $sub-nav-active-font-weight: normal;
-// $sub-nav-active-bg: $primary-color;
+$sub-nav-active-bg: #ffffff;
 // $sub-nav-active-bg-hover: scale-color($sub-nav-active-bg, $lightness: -14%);
-// $sub-nav-active-color: #fff;
+$sub-nav-active-color: #757982;
 // $sub-nav-active-padding: $sub-nav-padding;
 // $sub-nav-active-cursor: default;
 

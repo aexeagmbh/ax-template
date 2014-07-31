@@ -25,7 +25,7 @@ window.AX.foundation.settingCallBacks = window.AX.foundation.settingCallBacks ||
             foundationOptions[key] = callBack();
         });
 
-        $(document).foundation(foundationOptions);
+        $(document).foundation(foundationOptions).trigger('scroll');
     });
 
 
