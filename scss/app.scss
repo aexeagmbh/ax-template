@@ -727,12 +727,12 @@ footer,
 // case study plugin
 .casestudy {
     color: $ci5;
-}
 
-.casestudy .fi-arrow-left {
-    font-size: 3rem;
-    color: $ci1;
-//    text-shadow: 0 0 0.5rem $body-bg,0 0 0.7rem $body-bg,0 0 1.2rem $body-bg,0 0 1.5rem $ci1,0 0 2rem $ci1;
+    .fi-arrow-right,
+    .fi-arrow-left {
+        font-size: 3rem;
+        color: $ci1;
+    }
 }
 
 .casestudy h2 {
