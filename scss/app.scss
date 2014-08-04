@@ -361,8 +361,9 @@ h2 {
 
 /* HERO ROW */
 .heroRow {
-    min-height: 544px;
-    background: url(/static/ax-template/img/hero.jpg) top center no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
     @extend .specialelite;
     h2 {
         margin: 80px 0 60px;
