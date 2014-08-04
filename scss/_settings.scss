@@ -128,12 +128,12 @@ $include-html-type-classes: $include-html-classes;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
-// $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+$h1-font-size: rem-calc(1.8 * 44);
+$h2-font-size: rem-calc(1.8 * 37);
+$h3-font-size: rem-calc(1.8 * 27);
+$h4-font-size: rem-calc(23);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
@@ -147,7 +147,7 @@ $include-html-type-classes: $include-html-classes;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit;
+$paragraph-font-family: Tahoma;
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
