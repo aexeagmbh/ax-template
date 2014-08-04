@@ -325,7 +325,7 @@ h2 {
 /* Navigation ROW */
 .navigationRow {
     padding: 0 0 0 0;
-    margin-bottom: $navigationRow-margin-bottom;
+    margin-bottom: 0;
     border-bottom: $navigationRow-border-bottom-width solid #76bd1d;
     @extend .dosissemibold;
     @extend .gradient-lightgrey-reverse;
