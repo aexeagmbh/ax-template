@@ -17,7 +17,6 @@ $ci5: #757982;
 $ci6: #009639;
 
 
-
 $navigationRow-height: rem-calc($topbar-height);
 $navigationRow-border-bottom-width: rem-calc(2px);
 $navigationRow-margin-bottom: rem-calc(20px);
@@ -27,6 +26,7 @@ $navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-m
 
 
 
+// FIXME: REMOVE THIS!
 .arial,
 .arial b,
 .arial strong {font-family: Arial, Verdana, sans-serif !important;}
@@ -37,6 +37,7 @@ $navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-m
 .dosissemibold {font-family: 'dosissemibold', Arial, Sans-serif;}
 .specialelite {font-family: 'Special Elite', cursive, Arial, Sans-serif;}
 
+// FIXME: END REMOVE THIS!
 
 // Essentials
 body {
@@ -133,6 +134,9 @@ h2 {
     margin:1px;
 }
 
+
+// FIXME: REMOVE THIS!
+
 // Coloring
 .gradient-lightgrey {
     background: rgba(233,233,233,1);/* Old Browsers */
@@ -203,7 +207,7 @@ h2 {
 .button.yellow:hover, .button.yellow:focus {
     background: mix(#F8D928, #fff, 70%);
 }
-
+// FIXME: END REMOVE THIS
 
 /* Rounded Stuff */
 .roundFull {
@@ -213,30 +217,6 @@ h2 {
     border: 0px solid #fff;
 }
 
-// Link & Stuff
-
-// Padding & Margins
-.padTop10 {padding-top: 10px;}
-.padTop15 {padding-top: 15px;}
-.padTop20 {padding-top: 20px;}
-.padTop25 {padding-top: 25px;}
-
-.padBot10 {padding-bottom: 10px;}
-.padBot15 {padding-bottom: 15px;}
-.padBot20 {padding-bottom: 20px;}
-.padBot25 {padding-bottom: 25px;}
-
-.marTop10 {margin-top: 10px;}
-.marTop15 {margin-top: 15px;}
-.marTop20 {margin-top: 20px;}
-.marTop25 {margin-top: 25px;}
-.marTop50 {margin-top: 50px;}
-
-.marBot10 {margin-bottom: 10px;}
-.marBot15 {margin-bottom: 15px;}
-.marBot20 {margin-bottom: 20px;}
-.marBot25 {margin-bottom: 25px;}
-.marBot50 {margin-bottom: 50px;}
 
 .navigationRow-true-outer-height-margin {
   margin-top: $navigationRow-true-outer-height;
@@ -337,335 +317,6 @@ h2 {
     margin-bottom: 0px;
 }
 
-/* HERO ROW */
-.heroRow {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    @extend .specialelite;
-    h2 {
-        margin: 80px 0 60px;
-        text-shadow: 1px 1px #ddd;
-        @extend .specialelite;
-    }
-    a {
-        color:$ci1;
-        font-size: $h3-font-size - $h3-font-reduction;
-        text-shadow: 1px 1px #ddd;
-    }
-}
-
-@media #{$medium-up} {
-  .heroRow {
-    a {
-      font-size: $h3-font-size;
-    }
-  }
-}
-
-
-/* Reason Row */
-.reasonRow {
-    min-height: 740px;
-    padding: 90px 0 50px 0;
-    @extend .gradient-lightgrey;
-
-    h4{
-        font-size: 18px;
-        color: $ci4;
-    }
-    img {
-        margin-bottom: 15px;
-    }
-}
-
-/* BadgeRow */
-.badgeRow {
-    height:193px;
-    background: #3fa76a url(/static/ax-template/img/green-band.jpg) top center no-repeat;
-    border-top:7px solid #e9e9e9;
-    border-bottom:7px solid #e9e9e9;
-    img {
-        position: relative;
-        top:-40px;
-    }
-}
-
-/* HowWorkRow */
-.howworkRow {
-    .row > div {
-        padding-bottom: 50px;
-        margin-bottom: 60px;
-        border-bottom: 2px solid $ci1;
-    }
-
-    ol {
-        border-left: 1px dashed $ci6;
-        list-style-position: outside;
-        li:before {
-            display:block;
-            float:left;
-            height: 42px;
-            width: 42px;
-            margin-left: -50px;
-            background: $ci6;
-            color: #fff;
-            text-align: center;
-            line-height: 42px;
-            content: " ";
-            display: table;
-
-            counter-increment:section;
-            content: counter(section) ". ";
-            @extend .roundFull;
-        }
-        li {
-            height: 55px;
-            margin-bottom: 54px;
-            padding-left:30px;
-            list-style-type: none;
-            font-size: 18px;
-            span {
-                float: left;
-                display: block;
-                padding-top:8px;
-            }
-        }
-        li:after {
-            clear:both;
-            content: " ";
-            display: table;
-        }
-        li:last-child {
-            margin-bottom:0;
-        }
-    }
-}
-
-/* Product Overview Row */
-.productRow {
-    margin-bottom: 75px;
-
-    .greyBG {
-        background: #e1e3e4;
-
-        p {
-            color:$ci3;
-            font-size: 1.2rem;
-            padding: 10px 10% 30px;
-            @extend .dosissemibold;
-        }
-
-        a {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            color: $ci6;
-        }
-    }
-
-    h4 {
-        display: block;
-        padding: 10px 0;
-        background: $ci1;
-        color: #fff;
-    }
-    .columns:nth-child(3) .greyBG h4 {background:$ci1;}
-    .columns:nth-child(4) .greyBG h4 {background:$ci6;}
-    .columns:nth-child(5) .greyBG h4 {background:#006535;}
-}
-
-/* Try Row */
-.tryRow {
-    margin-bottom: 95px;
-
-    h4 {
-        font-size: 30px;
-        color: #686b6d;
-    }
-}
-
-/* ROI Calculator Row */
-.roiRow {
-    margin-bottom: 95px;
-    padding:100px 3% 100px;
-    @extend .gradient-lightgrey;
-}
-
-
-/* Pricing Table Row */
-.priceRow {
-    h4 {
-        padding: 10px 0;
-        margin-bottom: 0;
-        background: #b3db69;
-        color:#fff;
-        border-radius: 5px 5px 0px 0px;
-        -moz-border-radius: 5px 5px 0px 0px;
-        -webkit-border-radius: 5px 5px 0px 0px;
-        border: 0px solid #000000;
-        border-bottom: 2px solid $ci1;
-    }
-    table {
-        border-collapse: collapse;
-        border: none;
-        th{
-            background: $ci2;
-            color: #fff;
-            text-transform: uppercase;
-            @extend .dosissemibold;
-            font-size: 18px;
-        }
-        tr{
-            td{
-                @extend .arial;
-                font-weight: bold;
-                color: $ci3;
-                i.fi-check {
-                    color: $ci6;
-                    font-size: 18px;
-                }
-                i.fi-minus {
-                    color:#eec9c5;
-                    font-size: 18px;
-                }
-                span.price {
-                    display:inline-block;
-                    padding: 10px 25px;
-                    color:#fff;
-                    @extend .gradient-yellow;
-                    @extend .dosissemibold;
-                    font-size: 24px;
-                    border-top: 1px solid  #fcef88;
-                    border-bottom: 1px solid #dcc647;
-                }
-            }
-            td.text-right {
-                color: $ci2;
-                span {
-                    margin-left:10px;
-                }
-            }
-        }
-    }
-}
-
-
-/* Solution Row */
-.solutionRow {
-    margin-bottom: 95px;
-    .entry {
-        margin-top: 30px;
-    }
-    .entry .underline {
-        padding-bottom: 50px;
-        border-bottom: 2px solid #f9e14e;
-    }
-    h3{
-        font-size: 36px;
-        color:$ci6;
-        @extend .dosismedium;
-    }
-    p{
-        @extend .arial;
-        font-size: 20px;
-        color: $ci5;
-    }
-    a {
-        @extend .dosissemibold;
-        font-size: 22px;
-        color: $ci1;
-    }
-}
-
-/* Company Row */
-.companyRow {
-    margin-bottom: 50px;
-    h2 {
-        margin-bottom: 30px;
-        span.subheader {
-            display: block;
-            color: $ci3;
-            font-size: 42px;
-            line-height: 1;
-            text-transform: none;
-        }
-    }
-    .companyImg {
-        max-width:170px;
-        margin:0 auto 20px auto;
-        @extend .roundFull;
-        background: transparent;
-        border: 3px solid transparent;
-    }
-    .companyImg:hover {
-        background: $ci1;
-        border: 3px solid $ci1;
-    }
-}
-
-
-/* FAQ Row */
-.faqRow {
-    margin-bottom: 100px;
-    h3{
-        margin: 0 0 30px 0;
-    }
-}
-
-/* Testimonial Row */
-.testimonialRow {
-    min-height: 612px;
-    margin-bottom: 100px;
-    padding: 50px 0;
-    background: #e8e8e8 url(/static/ax-template/img/gray-band.jpg) top center no-repeat;
-    background-size: cover;
-    blockquote,
-    p {
-        font-size: 30px;
-        line-height: 1.4;
-        border: none;
-        cite {
-            margin-top:1em;
-            color: #7f8b94;
-            font-size: 30px;
-            font-style: normal;
-        }
-    }
-    .large {
-        font-size: 48px;
-        cite {
-            margin-top:1rem;
-            color: #7f8b94;
-            font-size: 30px;
-            font-style: normal;
-        }
-    }
-    span.greenborder {
-        display: inline-block;
-        margin: 20px auto;
-        width: 50%;
-    }
-    ul.orbit-content {
-        margin: 30px 0 0 0;
-    }
-    a.orbit-next,
-    a.orbit-prev {
-        height:50px;
-        width:50px;
-        background: $ci1;
-        @extend .roundFull;
-    }
-    a.orbit-prev {
-        span {
-            left:8px;
-        }
-    }
-    ol.orbit-bullets {
-        li.active {
-            background: $ci1;
-        }
-    }
-}
 
 /* Footer Row */
 .footerRow {
@@ -728,35 +379,6 @@ footer,
     background-color: #efefef;
 }
 
-// case study plugin
-.casestudy {
-    color: $ci5;
-
-    .fi-arrow-right,
-    .fi-arrow-left {
-        font-size: 3rem;
-        color: $ci1;
-    }
-}
-
-.casestudy h2 {
-    font-size: 2rem;
-    margin-bottom: 0.25rem;
-    color: $ci6;
-}
-
-.casestudy .subtitle {
-    margin-bottom: 1rem;
-}
-
-.casestudy .extrainfo_header {
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-}
-
-.casestudy .extrainfo_text {
-    margin-bottom: 3em;
-}
 
 .journal {
   .alert {
