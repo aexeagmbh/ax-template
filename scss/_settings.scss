@@ -128,12 +128,12 @@ $include-html-type-classes: $include-html-classes;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(1.8 * 44);
-$h2-font-size: rem-calc(1.8 * 37);
-$h3-font-size: rem-calc(1.8 * 27);
-$h4-font-size: rem-calc(23);
-$h5-font-size: rem-calc(18);
-$h6-font-size: 1rem;
+$h1-font-size: rem-calc(1.8 * 44) !default;
+$h2-font-size: rem-calc(1.8 * 37) !default;
+$h3-font-size: rem-calc(1.8 * 27) !default;
+$h4-font-size: rem-calc(23) !default;
+$h5-font-size: rem-calc(18) !default;
+$h6-font-size: 1rem !default;
 
 // We use these to control header size reduction on small screens
 $h1-font-reduction: rem-calc(3.2 * 10) !default;
