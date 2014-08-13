@@ -63,6 +63,12 @@ body header {
   min-height: 72px;
 }
 
+
+select[multiple] {
+  height: auto;
+}
+
+
 // SASS Customizing
 .button {
     color:#fff !important;
