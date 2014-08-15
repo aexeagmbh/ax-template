@@ -26,6 +26,13 @@ window.AX.foundation.settingCallBacks = window.AX.foundation.settingCallBacks ||
         });
 
         $(document).foundation(foundationOptions).trigger('scroll');
+
+        $(document).on('click', '[data-clickas]', function(e){
+            e.preventDefault();
+
+            var $this = $(this);
+            $('a[href="' + $this.data('clickas') + '"]').trigger('click');
+        });
     });
 
 
