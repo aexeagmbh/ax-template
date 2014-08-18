@@ -1,5 +1,8 @@
 /* jshint node: true */
-module.exports = function(grunt) {
+/*jslint node: true */
+module.exports = function (grunt) {
+    'use strict';
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -29,11 +32,16 @@ module.exports = function(grunt) {
             }
         },
 
-
-        jshint: {
-            all: ['Gruntfile.js', 'js/ax-template/**/*.js'],
-            options: {
-                jshintrc: true
+        jslint: {
+            'gruntfile': {
+                src: [
+                    'Gruntfile.js'
+                ]
+            },
+            'ax-template': {
+                src: [
+                    'js/ax-template/*.js'
+                ]
             }
         },
 
@@ -41,7 +49,7 @@ module.exports = function(grunt) {
             "ax-template": {
                 dest: 'js/ax-template.js',
                 src: [
-                    'js/ax-template/app.js'
+                    'js/ax-template/*.js'
                 ]
             },
             "foundation": {
@@ -67,8 +75,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-
+    grunt.loadNpmTasks('grunt-jslint');
 
     grunt.registerTask('buildJs', ['concat', 'uglify']);
     grunt.registerTask('build', ['sass', 'buildJs']);
