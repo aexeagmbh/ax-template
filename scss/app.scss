@@ -24,7 +24,7 @@ $navigationRow-margin-bottom: rem-calc(20px);
 $navigationRow-outer-height: $navigationRow-height + $navigationRow-border-bottom-width;
 $navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-margin-bottom;
 
-
+$main-margin-top: $column-gutter !default;
 
 // FIXME: REMOVE THIS!
 .arial,
@@ -57,15 +57,36 @@ body {
     a.button:hover {
         text-decoration: none;
     }
+
+    main {
+      margin-top: $main-margin-top;
+    }
+    main.full-width {
+      .row {
+        max-width: 100%;
+      }
+    }
 }
 
 body header {
   min-height: 72px;
 }
 
+body section header {
+  min-height: inherit;
+}
 
 select[multiple] {
   height: auto;
+}
+
+// Essential Form Styles
+
+form {
+  .column > fieldset:first-child,
+  .columns > fieldset:first-child {
+      margin-top: 0;
+  }
 }
 
 

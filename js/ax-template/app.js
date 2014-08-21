@@ -5,7 +5,7 @@ window.AX = window.AX || {};
 window.AX.foundation = window.AX.foundation || {};
 window.AX.foundation.settingCallBacks = window.AX.foundation.settingCallBacks || {};
 window.AX.ravenJs = window.AX.ravenJs || {};
-window.AX.ravenJs.config = window.AX.ravenJs.config || {};
+window.AX.ravenJs.config = window.AX.ravenJs.config || {sentryUrl: '', ravenOptions: {}};
 
 (function ($) {
     'use strict';
