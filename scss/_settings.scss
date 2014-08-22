@@ -41,7 +41,7 @@ $include-xl-html-grid-classes: false;
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: 'dosissemibold', Arial, Sans-serif;
+$body-font-family: 'PT Sans', Arial, Sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -125,7 +125,7 @@ $include-html-type-classes: $include-html-classes;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: auto;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(1.8 * 44) !default;
@@ -155,7 +155,7 @@ $h6-font-reduction: 0 !default;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-$paragraph-font-family: Tahoma;
+// $paragraph-font-family: Tahoma;
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
@@ -163,7 +163,7 @@ $paragraph-font-family: Tahoma;
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
-// $paragraph-text-rendering: optimizeLegibility;
+$paragraph-text-rendering: auto;
 
 // We use these to style <code> tags
 // $code-color: scale-color($alert-color, $lightness: -27%);
