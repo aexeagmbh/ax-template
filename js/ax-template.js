@@ -54,7 +54,7 @@ window.AX.ravenJs.config = window.AX.ravenJs.config || {sentryUrl: '', ravenOpti
         }
     };
 
-    $(document).ready(function () {
+    jQuery(function($) {
 
         initRavenJs();
         initFoundation();
