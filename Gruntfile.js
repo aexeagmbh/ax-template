@@ -24,11 +24,20 @@ module.exports = function (grunt) {
         },
 
         watch: {
-            grunt: { files: ['Gruntfile.js'] },
+            grunt: {
+                files: ['Gruntfile.js']
+            },
 
             sass: {
                 files: 'scss/**/*.scss',
                 tasks: ['sass']
+            },
+
+            js: {
+                files: [
+                    'js/*/*.js'
+                ],
+                tasks: ['buildJs']
             }
         },
 
