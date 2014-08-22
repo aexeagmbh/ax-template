@@ -26,7 +26,48 @@ $navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-m
 
 $main-margin-top: $column-gutter !default;
 
+
+$panel-warning-background-color: lighten($warning-color, 20%) !default;
+$panel-success-background-color: lighten($success-color, 20%) !default;
+$panel-alert-background-color: lighten($alert-color, 20%) !default;
+$panel-info-background-color: lighten($info-color, 20%) !default;
+
+
+
 .specialelite {font-family: 'Special Elite', 'Times New Roman', sans-serif;}
+
+// Info panels
+.panel {
+  font-family: dosissemibold,Arial,Sans-serif;
+}
+.panel-warning {
+  @include panel($bg: $panel-warning-background-color);
+}
+.panel-success {
+  @include panel($bg: $panel-success-background-color);
+}
+.panel-alert {
+  @include panel($bg: $panel-alert-background-color);
+}
+.panel-info {
+  @include panel($bg: $panel-info-background-color);
+}
+
+
+
+// FIXME: REMOVE THIS!
+.arial,
+.arial b,
+.arial strong {font-family: Arial, Verdana, sans-serif !important;}
+.dosisregular {font-family: 'dosisregular', Arial, sans-serif;}
+.dosislight {font-family: 'dosislight', Arial, sans-serif;}
+.dosismedium {font-family: 'dosismedium', Arial, sans-serif;}
+.dosisbold {font-family: 'dosisbold', Arial, sans-serif;}
+.dosissemibold {font-family: 'dosissemibold', Arial, Sans-serif;}
+.specialelite {font-family: 'Special Elite', cursive, Arial, Sans-serif;}
+
+// FIXME: END REMOVE THIS!
+>>>>>>> Stashed changes
 
 // Essentials
 body {
