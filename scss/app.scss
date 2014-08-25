@@ -24,7 +24,7 @@ $navigationRow-margin-bottom: rem-calc(20px);
 $navigationRow-outer-height: $navigationRow-height + $navigationRow-border-bottom-width;
 $navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-margin-bottom;
 
-$main-margin-top: $column-gutter !default;
+$main-margin-top: 0 !default;
 
 
 $panel-warning-background-color: lighten($warning-color, 20%) !default;
@@ -67,7 +67,7 @@ $panel-info-background-color: lighten($info-color, 20%) !default;
 .specialelite {font-family: 'Special Elite', cursive, Arial, Sans-serif;}
 
 // FIXME: END REMOVE THIS!
->>>>>>> Stashed changes
+
 
 // Essentials
 body {
@@ -79,7 +79,9 @@ body {
     a.button:hover {
         text-decoration: none;
     }
-
+    main {
+      margin-top: $main-margin-top;
+    }
     main.full-width {
       .row {
         max-width: 100%;
@@ -164,7 +166,6 @@ h1, h2, h3, h4, h5 {
 
 
 h2 {
-	font-size: $h3-font-size;
 	span.subheader {
 		display: block;
 		color: $ci2;
@@ -417,6 +418,31 @@ footer,
     background-color: $info-color;
   }
 }
+
+body .alert-box {
+  font-family: "PT Sans",Arial,Sans-serif;
+  font-size: 1rem;
+  a {
+    font-family: "PT Sans",Arial,Sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: darken($primary-color, 30%);
+  }
+}
+.alert-box.alert a {
+  color: darken($alert-color, 30%);
+}
+.alert-box.success a {
+  color: darken($success-color, 30%);
+}
+.alert-box.warning a {
+  color: darken($warning-color, 30%);
+}
+.alert-box.info a {
+  color: darken($info-color, 30%);
+}
+
+
 #checklist .complete {
   text-decoration: line-through;
 }
