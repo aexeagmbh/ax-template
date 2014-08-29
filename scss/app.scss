@@ -317,7 +317,7 @@ h2 {
     @extend .gradient-lightgrey-reverse;
 
     .sticky.fixed {
-        border-bottom: 1px solid #ddd;
+        border-bottom: none;
         @extend .gradient-lightgrey-reverse;
     }
     ul{
