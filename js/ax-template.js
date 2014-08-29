@@ -16,7 +16,8 @@ window.AX.ravenJs.config = window.AX.ravenJs.config || {sentryUrl: '', ravenOpti
         initRavenJs;
 
     foundationMagellanDefaultSettingsCallBack = function () {
-        var navigationRowOuterHeight =  $('.navigationRow').outerHeight();
+        var navigationRowOuterHeight =  $('.navigationRow .contain-to-grid').outerHeight();
+        console.log( 'navigationRowOuterHeight', navigationRowOuterHeight );
         return {
             'threshold': (-1) * navigationRowOuterHeight,
             'destination_threshold': navigationRowOuterHeight,
