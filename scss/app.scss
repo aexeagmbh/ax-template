@@ -1,11 +1,8 @@
-@import "foundation/scss/normalize";
-//@import "webfonts";
-
 @import "settings";
-@import "foundation/scss/foundation";
-
-
 $fi-path: "../fonts";
+
+@import "foundation/scss/normalize";
+@import "foundation/scss/foundation";
 @import "foundation-icon-fonts/foundation-icons";
 
 // Variables
@@ -16,7 +13,6 @@ $ci4: #555555;
 $ci5: #757982;
 $ci6: #009639;
 
-
 $navigationRow-height: rem-calc($topbar-height);
 $navigationRow-border-bottom-width: rem-calc(2px);
 $navigationRow-margin-bottom: rem-calc(20px);
@@ -26,20 +22,16 @@ $navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-m
 
 $main-margin-top: 0 !default;
 
-
 $panel-warning-background-color: lighten($warning-color, 20%) !default;
 $panel-success-background-color: lighten($success-color, 20%) !default;
 $panel-alert-background-color: lighten($alert-color, 20%) !default;
 $panel-info-background-color: lighten($info-color, 20%) !default;
 
-
-
-.specialelite {font-family: 'Special Elite', 'Times New Roman', sans-serif;}
+.specialelite {
+    font-family: 'Special Elite', 'Times New Roman', sans-serif;
+}
 
 // Info panels
-.panel {
-  font-family: dosissemibold,Arial,Sans-serif;
-}
 .panel-warning {
   @include panel($bg: $panel-warning-background-color);
 }
@@ -52,22 +44,6 @@ $panel-info-background-color: lighten($info-color, 20%) !default;
 .panel-info {
   @include panel($bg: $panel-info-background-color);
 }
-
-
-
-// FIXME: REMOVE THIS!
-.arial,
-.arial b,
-.arial strong {font-family: Arial, Verdana, sans-serif !important;}
-.dosisregular {font-family: 'dosisregular', Arial, sans-serif;}
-.dosislight {font-family: 'dosislight', Arial, sans-serif;}
-.dosismedium {font-family: 'dosismedium', Arial, sans-serif;}
-.dosisbold {font-family: 'dosisbold', Arial, sans-serif;}
-.dosissemibold {font-family: 'dosissemibold', Arial, Sans-serif;}
-.specialelite {font-family: 'Special Elite', cursive, Arial, Sans-serif;}
-
-// FIXME: END REMOVE THIS!
-
 
 // Essentials
 body {
@@ -419,27 +395,26 @@ footer,
   }
 }
 
-body .alert-box {
-  font-family: "PT Sans",Arial,Sans-serif;
-  font-size: 1rem;
-  a {
-    font-family: "PT Sans",Arial,Sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    color: darken($primary-color, 30%);
-  }
-}
-.alert-box.alert a {
-  color: darken($alert-color, 30%);
-}
-.alert-box.success a {
-  color: darken($success-color, 30%);
-}
-.alert-box.warning a {
-  color: darken($warning-color, 30%);
-}
-.alert-box.info a {
-  color: darken($info-color, 30%);
+.alert-box {
+    font-size: 1rem;
+
+    a {
+        font-weight: bold;
+        text-decoration: underline;
+        color: darken($primary-color, 30%);
+    }
+    &.alert a {
+        color: darken($alert-color, 30%);
+    }
+    &.success a {
+        color: darken($success-color, 30%);
+    }
+    &.warning a {
+        color: darken($warning-color, 30%);
+    }
+    &.info a {
+        color: darken($info-color, 30%);
+    }
 }
 
 
