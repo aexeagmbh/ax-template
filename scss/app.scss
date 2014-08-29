@@ -312,12 +312,12 @@ h2 {
 .navigationRow {
     padding: 0 0 0 0;
     margin-bottom: 0;
-    border-bottom: $navigationRow-border-bottom-width solid #76bd1d;
+    border-bottom: 1px solid #ddd;
     font-weight: bold;
     @extend .gradient-lightgrey-reverse;
 
     .sticky.fixed {
-        border-bottom: 2px solid #76bd1d;
+        border-bottom: 1px solid #ddd;
         @extend .gradient-lightgrey-reverse;
     }
     ul{
