@@ -3,11 +3,8 @@
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "foundation": "5.4.3",
+    "foundation": "git@github.com:aexeagmbh/foundation.git#master",
     "foundation-icon-fonts": "*",
     "raven-js": "~1.1.16"
-  },
-  "resolutions": {
-    "foundation": "5.4.3"
   }
 }

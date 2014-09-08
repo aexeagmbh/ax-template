@@ -8,15 +8,15 @@ module.exports = function (grunt) {
 
         sass: {
             options: {
-                includePaths: [
-                    'bower_components/foundation/scss',
-                    'bower_components'
-                ]
+                loadPath: [
+                    __dirname + '/scss',
+                    __dirname + '/bower_components/foundation/scss',
+                    __dirname + '/bower_components'
+                ],
+                sourcemap: 'auto',
+                bundleExec: true
             },
             dist: {
-                options: {
-                    outputStyle: 'compressed'
-                },
                 files: {
                     'css/ax-template.css': 'scss/app.scss'
                 }
@@ -79,7 +79,8 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-sass');
+   // grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
