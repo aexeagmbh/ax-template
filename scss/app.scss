@@ -27,6 +27,13 @@ $panel-success-background-color: lighten($success-color, 20%) !default;
 $panel-alert-background-color: lighten($alert-color, 20%) !default;
 $panel-info-background-color: lighten($info-color, 20%) !default;
 
+$footer-padding-top: 2rem !default;
+$footer-padding-bottom: 2rem !default;
+$footer-border-width: rem-calc(1px) !default;
+/* for a one line footer */
+$footer-height: $footer-border-width + $footer-padding-top + $footer-padding-bottom + rem-calc($base-line-height / 100% * $rem-base) !default;
+
+
 .specialelite {
     font-family: 'Special Elite', 'Times New Roman', sans-serif;
 }
@@ -325,6 +332,7 @@ h2 {
 
 
 /* Footer Row */
+//FIXME is this still in use? if not remove
 .footerRow {
     margin-bottom: 100px;
     h4 {
@@ -369,16 +377,34 @@ h2 {
     }
 }
 
+body > .wrap {
+
+
+}
+
 footer,
 .footer {
-    margin-top: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: $footer-padding-top;
+    padding-bottom: $footer-padding-bottom;
 
-    border-top: 1px solid #ddd;
+    border-top: $footer-border-width solid #ddd;
     background-color: #efefef;
 }
 
+/* maximize content height so footer is not in the middle of the screen */
+body {
+  > .wrap {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: $footer-height;
+  }
+  footer,
+  .footer {
+    margin-top: -1 * $footer-height;
+    height: $footer-height;
+    clear: both;
+  }
+}
 
 .journal {
   .alert {
@@ -417,15 +443,9 @@ footer,
     }
 }
 
-
-#checklist .complete {
-  text-decoration: line-through;
-}
-#account_status {
-  width: 100%;
-}
 /* button with lower hight */
-.low {
-  padding-top: 7px;
-  padding-bottom: 6px;
+.button.low,
+button.low {
+  padding-top: rem-calc(7px);
+  padding-bottom: rem-calc(6px);
 }
