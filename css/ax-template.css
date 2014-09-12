@@ -7716,6 +7716,8 @@ select[multiple] {
 form .column > fieldset:first-child,
 form .columns > fieldset:first-child {
   margin-top: 0; }
+form label.required:after {
+  content: '*'; }
 
 .button {
   color: #fff !important; }
@@ -7845,31 +7847,29 @@ h2 span.subheader {
   display: block;
   width: 100%; }
 
-.accordion dd > a {
-  background: transparent;
-  padding: 1rem;
-  padding-left: 90px;
-  color: #313337;
-  font-weight: bold; }
-.accordion dd.active > a {
-  background: transparent; }
-.accordion dd > a:hover {
-  background: transparent;
-  text-decoration: none; }
-.accordion .content.active {
-  background: none;
-  margin-left: 100px;
-  color: #313337; }
-.accordion dd {
-  min-height: 72px; }
-.accordion dd:nth-child(even) {
-  background: #fff url(/static/ax-template/img/acc_light_plus.jpg) top left no-repeat; }
-.accordion dd:nth-child(odd) {
-  background: #f2f2f2 url(/static/ax-template/img/acc_dark_plus.jpg) top left no-repeat; }
-.accordion dd:nth-child(even).active {
-  background: #fff url(/static/ax-template/img/acc_grey_minus.jpg) top left no-repeat; }
-.accordion dd:nth-child(odd).active {
-  background: #f2f2f2 url(/static/ax-template/img/acc_grey_minus.jpg) top left no-repeat; }
+.accordion {
+  margin-bottom: 1rem; }
+  .accordion dd > a {
+    background: transparent;
+    padding: 1rem;
+    padding-left: 90px;
+    color: #313337;
+    font-weight: bold; }
+  .accordion dd.active > a {
+    background: transparent; }
+  .accordion dd > a:hover {
+    background: transparent;
+    text-decoration: none; }
+  .accordion .content.active {
+    background: none;
+    margin-left: 0;
+    border: 1px solid #EFEFEF;
+    border-top: none;
+    color: #313337; }
+  .accordion dd {
+    min-height: 72px; }
+  .accordion dd:nth-child(odd) {
+    background: none; }
 
 [data-magellan-expedition] .sub-nav dd a:hover,
 [data-magellan-expedition] .sub-nav dt a:hover,

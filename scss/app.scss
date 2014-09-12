@@ -94,6 +94,8 @@ form {
   .columns > fieldset:first-child {
       margin-top: 0;
   }
+
+  label.required:after { content: '*'; }
 }
 
 
@@ -257,24 +259,21 @@ h2 {
     }
     .content.active {
         background: none;
-        margin-left: 100px;
+        margin-left: 0;
+        border: 1px solid $accordion-navigation-bg-color;
+        border-top: none;
         color:#313337;
     }
     dd{
         min-height: 72px;
     }
-    dd:nth-child(even) {
-        background:#fff url(/static/ax-template/img/acc_light_plus.jpg)top left no-repeat;
-    }
-    dd:nth-child(odd) {
-        background:#f2f2f2 url(/static/ax-template/img/acc_dark_plus.jpg)top left no-repeat;
-    }
-    dd:nth-child(even).active {
-        background:#fff url(/static/ax-template/img/acc_grey_minus.jpg)top left no-repeat;
-    }
-    dd:nth-child(odd).active {
-        background:#f2f2f2 url(/static/ax-template/img/acc_grey_minus.jpg)top left no-repeat;
-    }
+
+  margin-bottom: 1rem;
+
+  dd:nth-child(odd) {
+      background: none;
+  }
+
 }
 
 [data-magellan-expedition] .sub-nav dd a:hover,
@@ -377,10 +376,7 @@ h2 {
     }
 }
 
-body > .wrap {
 
-
-}
 
 footer,
 .footer {
