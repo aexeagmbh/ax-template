@@ -87,6 +87,11 @@ select[multiple] {
   height: auto;
 }
 
+input[type="range"] {
+    display: inline-block;
+    width: 100%;
+}
+
 // Essential Form Styles
 
 form {
@@ -272,6 +277,17 @@ h2 {
 
   dd:nth-child(odd) {
       background: none;
+  }
+
+  .accordion-navigation-head {
+    display: table-row;
+    .accordion-navigation-head-description,
+    .accordion-navigation-head-icon {
+      display: table-cell;
+    }
+    .accordion-navigation-head-icon {
+      vertical-align: middle;
+    }
   }
 
 }

@@ -7713,6 +7713,10 @@ body {
 select[multiple] {
   height: auto; }
 
+input[type="range"] {
+  display: inline-block;
+  width: 100%; }
+
 form .column > fieldset:first-child,
 form .columns > fieldset:first-child {
   margin-top: 0; }
@@ -7870,6 +7874,13 @@ h2 span.subheader {
     min-height: 72px; }
   .accordion dd:nth-child(odd) {
     background: none; }
+  .accordion .accordion-navigation-head {
+    display: table-row; }
+    .accordion .accordion-navigation-head .accordion-navigation-head-description,
+    .accordion .accordion-navigation-head .accordion-navigation-head-icon {
+      display: table-cell; }
+    .accordion .accordion-navigation-head .accordion-navigation-head-icon {
+      vertical-align: middle; }
 
 [data-magellan-expedition] .sub-nav dd a:hover,
 [data-magellan-expedition] .sub-nav dt a:hover,
