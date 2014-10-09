@@ -280,7 +280,8 @@ h2 {
   }
 
   .accordion-navigation-head {
-    display: table-row;
+    display: table;
+    width: 100%;
     .accordion-navigation-head-description,
     .accordion-navigation-head-icon {
       display: table-cell;

@@ -7875,7 +7875,7 @@ h2 span.subheader {
   .accordion dd:nth-child(odd) {
     background: none; }
   .accordion .accordion-navigation-head {
-    display: table-row; }
+    display: table; }
     .accordion .accordion-navigation-head .accordion-navigation-head-description,
     .accordion .accordion-navigation-head .accordion-navigation-head-icon {
       display: table-cell; }
