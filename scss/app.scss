@@ -1,39 +1,3 @@
-@import "settings";
-$fi-path: "../fonts";
-
-@import "foundation/scss/normalize";
-@import "foundation/scss/foundation";
-@import "foundation-icon-fonts/foundation-icons";
-
-// Variables
-$ci1: #76bd1d;
-$ci2: #313337;
-$ci3: #a1a5ae;
-$ci4: #555555;
-$ci5: #757982;
-$ci6: #009639;
-
-$navigationRow-height: rem-calc($topbar-height);
-$navigationRow-border-bottom-width: rem-calc(2px);
-$navigationRow-margin-bottom: rem-calc(20px);
-
-$navigationRow-outer-height: $navigationRow-height + $navigationRow-border-bottom-width;
-$navigationRow-true-outer-height: $navigationRow-outer-height + $navigationRow-margin-bottom;
-
-$main-margin-top: 0 !default;
-
-$panel-warning-background-color: lighten($warning-color, 20%) !default;
-$panel-success-background-color: lighten($success-color, 20%) !default;
-$panel-alert-background-color: lighten($alert-color, 20%) !default;
-$panel-info-background-color: lighten($info-color, 20%) !default;
-
-$footer-padding-top: 2rem !default;
-$footer-padding-bottom: 2rem !default;
-$footer-border-width: rem-calc(1px) !default;
-/* for a one line footer */
-$footer-height: $footer-border-width + $footer-padding-top + $footer-padding-bottom + rem-calc($base-line-height / 100% * $rem-base) !default;
-
-
 .specialelite {
     font-family: 'Special Elite', 'Times New Roman', sans-serif;
 }
