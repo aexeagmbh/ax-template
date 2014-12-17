@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "foundation": "git@github.com:aexeagmbh/foundation.git#master",
+    "foundation": "~5.5.0",
     "foundation-icon-fonts": "*",
     "raven-js": "~1.1.16"
   }
